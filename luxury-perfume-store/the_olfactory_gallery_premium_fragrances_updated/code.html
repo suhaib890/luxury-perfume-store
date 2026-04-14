@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>luxury-perfume-store | World Class Fragrance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Manrope:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e0e3e0",
+                        "primary": "#18181b",
+                        "secondary-fixed": "#f4e0c3",
+                        "on-secondary": "#fff8f1",
+                        "surface-container": "#edeeeb",
+                        "inverse-on-surface": "#9d9d9b",
+                        "error-container": "#fe8983",
+                        "primary-fixed-dim": "#d6d4d3",
+                        "secondary-fixed-dim": "#e5d2b6",
+                        "surface": "#ffffff",
+                        "inverse-primary": "#ffffff",
+                        "outline-variant": "#afb3b0",
+                        "on-tertiary": "#fef8ef",
+                        "inverse-surface": "#0d0e0e",
+                        "on-secondary-fixed-variant": "#675a43",
+                        "tertiary-fixed": "#f9f3ea",
+                        "surface-container-low": "#f3f4f1",
+                        "on-background": "#2f3331",
+                        "on-primary-fixed-variant": "#5c5b5b",
+                        "error": "#9f403d",
+                        "surface-variant": "#e0e3e0",
+                        "surface-container-high": "#e6e9e6",
+                        "on-tertiary-fixed": "#4c4943",
+                        "on-secondary-fixed": "#4a3e29",
+                        "tertiary-dim": "#56534c",
+                        "on-primary-container": "#525151",
+                        "outline": "#777c79",
+                        "surface-dim": "#d6dbd7",
+                        "on-surface-variant": "#5c605d",
+                        "secondary": "#6b5d46",
+                        "surface-bright": "#faf9f7",
+                        "on-primary-fixed": "#403f3f",
+                        "on-tertiary-fixed-variant": "#69665f",
+                        "on-primary": "#faf7f6",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-dim": "#5f513b",
+                        "on-tertiary-container": "#5f5b54",
+                        "secondary-container": "#f4e0c3",
+                        "error-dim": "#4e0309",
+                        "on-secondary-container": "#5d503a",
+                        "tertiary-fixed-dim": "#ebe4db",
+                        "background": "#ffffff",
+                        "surface-tint": "#5f5e5e",
+                        "primary-fixed": "#e5e2e1",
+                        "on-error": "#fff7f6",
+                        "on-surface": "#18181b",
+                        "tertiary-container": "#f9f3ea",
+                        "tertiary": "#625f58",
+                        "primary-dim": "#535252",
+                        "on-error-container": "#752121",
+                        "primary-container": "#e5e2e1"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .scent-chip {
+            font-size: 10px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .product-image-container:hover .add-to-cart-overlay {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .newsreader-italic { font-family: 'Newsreader'; font-style: italic; }
+        .oval-mask {
+            border-radius: 50% 50% 0 0;
+            clip-path: ellipse(50% 50% at 50% 50%);
+        }
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md border-b border-zinc-100 dark:border-zinc-800 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black tracking-tighter text-zinc-900 dark:text-zinc-50 cursor-pointer">luxury-perfume-store</span>
+<div class="hidden lg:flex gap-6 font-serif tracking-widest uppercase text-xs">
+<a class="text-zinc-900 dark:text-zinc-50 border-b border-zinc-900 dark:border-zinc-50 pb-1 cursor-pointer" href="#">Fragrances</a>
+<a class="text-zinc-500 dark:text-zinc-400 pb-1 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors duration-300 cursor-pointer" href="#">Collections</a>
+<a class="text-zinc-500 dark:text-zinc-400 pb-1 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors duration-300 cursor-pointer" href="#">The House</a>
+<a class="text-zinc-500 dark:text-zinc-400 pb-1 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors duration-300 cursor-pointer" href="#">Stores</a>
+</div>
+</div>
+<div class="flex items-center gap-5">
+<button class="material-symbols-outlined text-zinc-900 dark:text-zinc-50 hover:opacity-70 transition-opacity">search</button>
+<button class="material-symbols-outlined text-zinc-900 dark:text-zinc-50 hover:opacity-70 transition-opacity">shopping_bag</button>
+<button class="material-symbols-outlined text-zinc-900 dark:text-zinc-50 hover:opacity-70 transition-opacity">person</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Updated Hero Section based on IMAGE_5 -->
+<section class="relative min-h-[90vh] flex items-center px-12 md:px-24 mb-12 overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 w-full items-center">
+<div class="md:col-span-7 z-10 fade-in-up" style="animation-delay: 0.2s;">
+<p class="font-serif text-sm tracking-widest text-zinc-500 mb-6 max-w-xs leading-relaxed">
+                    Buy Popular Colognes on Sale at a Discount
+                </p>
+<h1 class="font-headline text-[10vw] md:text-[8rem] leading-[0.85] tracking-tighter text-on-surface mb-12">
+                    World <br/> <span class="newsreader-italic ml-[10%]">Class</span> <br/> Fragrance
+                </h1>
+<!-- Pill-shaped button with product preview -->
+<div class="flex items-center group cursor-pointer">
+<div class="bg-zinc-900 text-white rounded-full pl-6 pr-2 py-2 flex items-center gap-4 transition-transform duration-500 hover:scale-105">
+<span class="text-[10px] uppercase tracking-[0.2em] font-label">Shop Collection</span>
+<div class="w-12 h-12 rounded-full overflow-hidden bg-white/10 flex items-center justify-center">
+<img alt="preview" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ-JbvlriowEI3bv6JXPeoe30rliD09J4b5sXIBh3FvHH-91LhSm38BIhaIR9HSaec0HLCJEU6dxWEVe5JjLGZjoBHqWJZJr0qkA0JN1q2hIcp1wNrDDeUZxIhgmZlmMw8ipuiQ83SO2xL4F3xYS29obhV6L1JGlsy9Q8u36gSpsPSV_-ghU99oXH4Cx1D4Mm_v-R53u_3DgZT97K1IbW-z8CmJwiYZsBHd4l_ZxNedDnpEDcSxUvlcT-6kHKEoUqPxmFmmrngrhw"/>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-5 relative flex justify-center md:justify-end items-center fade-in-up" style="animation-delay: 0.4s;">
+<div class="relative w-[300px] md:w-[450px] aspect-[3/4] oval-mask overflow-hidden shadow-2xl">
+<img alt="Featured Fragrance" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ-JbvlriowEI3bv6JXPeoe30rliD09J4b5sXIBh3FvHH-91LhSm38BIhaIR9HSaec0HLCJEU6dxWEVe5JjLGZjoBHqWJZJr0qkA0JN1q2hIcp1wNrDDeUZxIhgmZlmMw8ipuiQ83SO2xL4F3xYS29obhV6L1JGlsy9Q8u36gSpsPSV_-ghU99oXH4Cx1D4Mm_v-R53u_3DgZT97K1IbW-z8CmJwiYZsBHd4l_ZxNedDnpEDcSxUvlcT-6kHKEoUqPxmFmmrngrhw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- New Spotlight Section based on IMAGE_5 -->
+<section class="px-12 md:px-24 mb-32 fade-in-up" style="animation-delay: 0.6s;">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 border-t border-zinc-100 pt-20">
+<div class="md:w-1/2">
+<h2 class="font-headline text-5xl md:text-6xl leading-tight mb-8">
+                    A Fragrance Is A Smell, <br/> Usually A Pleasant Or <br/>
+<span class="inline-flex items-center gap-4">
+<span class="w-12 h-6 rounded-full bg-zinc-900"></span>
+<span class="newsreader-italic">Sweet Smell.</span>
+</span>
+</h2>
+<div class="grid grid-cols-2 gap-12 mt-16">
+<div>
+<span class="material-symbols-outlined text-3xl mb-4" data-icon="settings_input_antenna">settings_input_antenna</span>
+<p class="font-body text-xs text-zinc-500 leading-relaxed uppercase tracking-wider">
+                            A fragrance is a smell, usually a pleasant or sweet smell. Often perfumes are called fragrances. If you like the fragrance.
+                        </p>
+</div>
+<div>
+<span class="material-symbols-outlined text-3xl mb-4" data-icon="eco">eco</span>
+<p class="font-body text-xs text-zinc-500 leading-relaxed uppercase tracking-wider">
+                            The Fragrance is a pleasant-smelling liquid which people put on their bodies to make themselves smell nice.
+                        </p>
+</div>
+</div>
+</div>
+<div class="md:w-1/3 flex flex-col gap-12">
+<div class="relative overflow-hidden aspect-square rounded-2xl bg-zinc-50 p-8 flex items-center justify-center">
+<img alt="product spotlight" class="w-2/3 object-contain hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo3AEdXaCM3LBBAdjHUptl5FEhUZPmD8_XQVdGiJrivUrMK9qzEKIhbtIu2CHUWp7KjqVi8TF8u6Lp7-wrPEGF4sybUQAO0IsxwywNm9ASvCNlg1c2oLnNTJTmYrDZghAkxsS8kkyX_-_dRiLRJhB9j7fSN5Zgy21l39maloIYk29nzoRGJOckAYgOgIdjne3M5jft6XkMUng144Q-WtnWdBn0B0Zup3tuHfRxBeYbk5sf6ARQoymeqbEKODQXHIycMGDdw5xASz8"/>
+</div>
+<div class="text-center">
+<p class="font-body text-[10px] uppercase tracking-[0.2em] text-zinc-400 mb-2">Signature Series</p>
+<p class="font-headline text-xl italic">"A fragrance is a smell, usually a pleasant or sweet smell. Often perfumes are called fragrances."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Gallery Controls -->
+<section class="px-12 mb-16 flex flex-col md:flex-row justify-between items-end gap-8 border-b border-zinc-100 pb-12">
+<div>
+<h2 class="font-headline text-4xl mb-4">The Collection</h2>
+<div class="flex flex-wrap gap-8 font-label text-[10px] uppercase tracking-[0.15em] text-zinc-500">
+<button class="text-on-surface border-b border-on-surface pb-1">All Scents</button>
+<button class="hover:text-on-surface transition-colors">Woody</button>
+<button class="hover:text-on-surface transition-colors">Floral</button>
+<button class="hover:text-on-surface transition-colors">Citrus</button>
+<button class="hover:text-on-surface transition-colors">Fresh</button>
+<button class="hover:text-on-surface transition-colors">Oriental</button>
+</div>
+</div>
+<div class="flex items-center gap-6 font-label text-[10px] uppercase tracking-[0.15em] text-zinc-500">
+<span>Sort by:</span>
+<select class="bg-transparent border-none focus:ring-0 p-0 text-[10px] uppercase tracking-[0.15em] cursor-pointer">
+<option>Popularity</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+</select>
+</div>
+</section>
+<!-- Product Grid (30 Items) -->
+<section class="px-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-12 gap-y-24">
+<!-- Item 1 -->
+<div class="group fade-in-up">
+<div class="product-image-container relative overflow-hidden aspect-[4/5] bg-zinc-50 mb-6 rounded-lg">
+<img alt="Midnight Oud" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo3AEdXaCM3LBBAdjHUptl5FEhUZPmD8_XQVdGiJrivUrMK9qzEKIhbtIu2CHUWp7KjqVi8TF8u6Lp7-wrPEGF4sybUQAO0IsxwywNm9ASvCNlg1c2oLnNTJTmYrDZghAkxsS8kkyX_-_dRiLRJhB9j7fSN5Zgy21l39maloIYk29nzoRGJOckAYgOgIdjne3M5jft6XkMUng144Q-WtnWdBn0B0Zup3tuHfRxBeYbk5sf6ARQoymeqbEKODQXHIycMGDdw5xASz8"/>
+<div class="add-to-cart-overlay absolute inset-0 bg-black/5 flex items-center justify-center opacity-0 translate-y-4 transition-all duration-500">
+<button class="bg-white text-on-surface px-8 py-3 text-[10px] font-label uppercase tracking-[0.2em] shadow-lg">Add to Bag</button>
+</div>
+</div>
+<div class="text-center">
+<span class="scent-chip bg-zinc-100 text-zinc-600 px-2 py-0.5 rounded-full mb-3 inline-block">Woody</span>
+<h3 class="font-headline text-xl mb-1">Midnight Oud</h3>
+<p class="font-body text-[11px] text-zinc-400 italic mb-2 tracking-wide">Smoky resin, dark cedar, and amber</p>
+<p class="font-label text-sm text-on-surface tracking-widest">₹2499</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group fade-in-up" style="animation-delay: 0.1s;">
+<div class="product-image-container relative overflow-hidden aspect-[4/5] bg-zinc-50 mb-6 rounded-lg">
+<img alt="Royal Amber" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo5UOU8IjjlHzzGoKAMLOBtC42Vue5c38d0MKODMZMaOnKakPL-bY6v5ggFo4P91rsBGqQ8JRv85nZhrkVCLrzQMrJ2Xa0mkforzc83K-icDBT1J8W3mMtnpIn6sWMjV6hpVb0F3uAl7167nD2xE88mjEgW-_iqwMTQWdIwPWNkIZ4INOOJVuc68E3GNlahb_-su0rcjtae-lbKOqgrZBH8YLe9bwMVZNWHC4nNRZ2yBa4BUjTe3tb-Isqn_L0jiqkf3BBbuD57Ms"/>
+<div class="add-to-cart-overlay absolute inset-0 bg-black/5 flex items-center justify-center opacity-0 translate-y-4 transition-all duration-500">
+<button class="bg-white text-on-surface px-8 py-3 text-[10px] font-label uppercase tracking-[0.2em] shadow-lg">Add to Bag</button>
+</div>
+</div>
+<div class="text-center">
+<span class="scent-chip bg-zinc-100 text-zinc-600 px-2 py-0.5 rounded-full mb-3 inline-block">Oriental</span>
+<h3 class="font-headline text-xl mb-1">Royal Amber</h3>
+<p class="font-body text-[11px] text-zinc-400 italic mb-2 tracking-wide">Rich honey, warm spices, and musk</p>
+<p class="font-label text-sm text-on-surface tracking-widest">₹2799</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group fade-in-up" style="animation-delay: 0.2s;">
+<div class="product-image-container relative overflow-hidden aspect-[4/5] bg-zinc-50 mb-6 rounded-lg">
+<img alt="Citrus Breeze" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFdrHVBfAfGL_VeykFiQ0EU-LNX7OpwOKwS097sePBwwgek1m5JQVEDDSH76b3_wqgbKAGZ6lfOq-ZigSx2iugpm0YSDuRtl5uyQ4IGsTaV1t1f6AiXHU8lEh-yJPhFuSOkbqWIJu2g272VW_HpIBvj0PBBTUvAE11q23YXJxl4uKxmBxrP7aK3QrTSamaucggKb9Hh5tYC22X2ZtIadu9xLU8N-ryewVX8Pvu1S2iq0cQ84eQuoCO0HVvBtubZUEBrHNShjuEGqs"/>
+<div class="add-to-cart-overlay absolute inset-0 bg-black/5 flex items-center justify-center opacity-0 translate-y-4 transition-all duration-500">
+<button class="bg-white text-on-surface px-8 py-3 text-[10px] font-label uppercase tracking-[0.2em] shadow-lg">Add to Bag</button>
+</div>
+</div>
+<div class="text-center">
+<span class="scent-chip bg-zinc-100 text-zinc-600 px-2 py-0.5 rounded-full mb-3 inline-block">Citrus</span>
+<h3 class="font-headline text-xl mb-1">Citrus Breeze</h3>
+<p class="font-body text-[11px] text-zinc-400 italic mb-2 tracking-wide">Zesty bergamot and Mediterranean lemon</p>
+<p class="font-label text-sm text-on-surface tracking-widest">₹1999</p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group fade-in-up" style="animation-delay: 0.3s;">
+<div class="product-image-container relative overflow-hidden aspect-[4/5] bg-zinc-50 mb-6 rounded-lg">
+<img alt="Velvet Rose" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCZHbrflTuyk_ipJaXkMLDi9lmSoklu5mK8MaVvJo570n7JVft49n9l42IEDhSkiXCLHIx4IqkA_o04_NyWcrGpxoiE1IVF2S_1QFN8U5aq6xeqsbfqb7EB9ydUzgH5ay0caCzegCI2t8OKlzII1uRBKttlfBR6UX8E82weq4qQ7_e-SeJLnX4eQCdZI9hsckHzoiY5ouVTMXhQoj1j709MyZ5jaUn_TfnoN4YJx2_yc8G7Xed6vWH3CUK-w15Y-OiPVm3QohPY7I"/>
+<div class="add-to-cart-overlay absolute inset-0 bg-black/5 flex items-center justify-center opacity-0 translate-y-4 transition-all duration-500">
+<button class="bg-white text-on-surface px-8 py-3 text-[10px] font-label uppercase tracking-[0.2em] shadow-lg">Add to Bag</button>
+</div>
+</div>
+<div class="text-center">
+<span class="scent-chip bg-zinc-100 text-zinc-600 px-2 py-0.5 rounded-full mb-3 inline-block">Floral</span>
+<h3 class="font-headline text-xl mb-1">Velvet Rose</h3>
+<p class="font-body text-[11px] text-zinc-400 italic mb-2 tracking-wide">Damask rose and white petal accents</p>
+<p class="font-label text-sm text-on-surface tracking-widest">₹2299</p>
+</div>
+</div>
+<!-- Repeated Items for the full 30 grid -->
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAShf_U6Nuy-blfzQVhf6t_Mk4KzOq7CnaVQghZDAsmMJAmOaycSBei0CRyqDEtwQVuEPJQvFe757nDK5l-VqsmtLanHBK8XIdpjWBiAts_tn6aEGopi1hRlNk9b7SRORbz3InqazHggqdk7dKF8xlZNT7Qvjjj9fer0k2rKMeuochbmdE0HXIWeuiEZg8mGsr-PoxsVxxAnwTpaNmY7JK5kHIQ7iDh2dAAQdF_eDjPC5BSVDJ1EMy5XL4605uhDKMe--D0Ws0a0A"/></div><div class="text-center"><span class="scent-chip bg-zinc-100 px-2 py-0.5 rounded-full mb-2 inline-block">Fresh</span><h3 class="font-headline text-xl mb-1">Ocean Mist</h3><p class="font-label text-sm">₹1899</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxCweqiIVkceGpw2A1_7V4VYkgxKTgsBEL2d4YatXQtJPL6tbXO-D0TEK5CzIbqKlzHLRkB8W5p4XRH-CL9g1X0SlnuvTnLAoOHF__Sx-8BONxpG99nvOymVEi8-eJCaM3n-1f0VDlfvnRcGvVlkS3SuePEyy1uUzWX9KXYAGxwz4zDbUMYqJjpIVTb0fPyrw77FXezn7I0ThXThvrpAEheuk4Eo5gb6nVbXM6rwlH-NXzIcBG7n15Gk1W-9FhtiDOtN-407lWGKU"/></div><div class="text-center"><span class="scent-chip bg-zinc-100 px-2 py-0.5 rounded-full mb-2 inline-block">Woody</span><h3 class="font-headline text-xl mb-1">Dark Musk</h3><p class="font-label text-sm">₹2599</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU_fFsBMkR_nV_SHOjBIkGYYFBX156E52pl8ymrSGi3N7kXBG9wEj10fOTnHqx9j53ksPlxtx0hUQtmilnCiZXpJabGM2QqCR9lKDUT5aW5SCDllWvf7QBOb8WFHn7G3RjjBOUGgIkSN1aOghtPfIqTltAlRhrj1Z7zv209Qa-VaLFUHI_mfp95w-iX-uSMxmPGuJJVDPU7kXZCyS1YxffpsZ2cGBPMB0sZHsFxFEwPn1YMcDXYTWbsonF_PCTDbpz6ZK38nSNNg4"/></div><div class="text-center"><span class="scent-chip bg-zinc-100 px-2 py-0.5 rounded-full mb-2 inline-block">Woody</span><h3 class="font-headline text-xl mb-1">Golden Sandal</h3><p class="font-label text-sm">₹2699</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuqXObt-CiM6NZqy9qBW4CpTZ1EZIaUVZRjQsOHwzYZYKrTaEhX8m3BqhKUAZeCgTerUEkdgViQk9Bs4Yqrt0h-e9qh0n9hN7F9nM_cEk3yvGgR6czTBLggI09BGzhOPFseqYsxzxfHlXQONejnTO0h6cKJ9TidFcgTh9RDlrKS11C24dnPdsFyjWVEw5hveydrIVtbc3suOAOCQvf7wPQtxsA3DHXyIfXXQ9f0xgRNCanzd8QvEfwXDwsBCLyGg62XBdTWcUJN6M"/></div><div class="text-center"><span class="scent-chip bg-zinc-100 px-2 py-0.5 rounded-full mb-2 inline-block">Floral</span><h3 class="font-headline text-xl mb-1">Bloom Essence</h3><p class="font-label text-sm">₹2199</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBLicC_POdGviizkcSeu69gH0HwmXei99YoR4Wlryi9vSsmlIR4fVk3bCTitIKEbxvf7AuBUnIgBu6zirPw6P9GkxxH0l_L3PXzq4UP0vIgzCiAVJolMWXS938gESOCaO2bQFfIehtB_RM76JX6CVphfidco-uMHrSJiWM-6XmO7E7wA78eDzUhgVuIz4dxen2Cj891CIt9bNcU_nacmajmgFHyl4zhfKXjHQvItpIHz5SKb2ivk92Tf22mzwxVAFkklDjFC4n1Vs"/></div><div class="text-center"><span class="scent-chip bg-zinc-100 px-2 py-0.5 rounded-full mb-2 inline-block">Citrus</span><h3 class="font-headline text-xl mb-1">Fresh Lime</h3><p class="font-label text-sm">₹1799</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSijjMOIkRbycZEOyOASisrszss7sdg1fMfA8wYVvKmcPUbJeNUcWWT-959RG9JqUJQdcAJ8pCxwXZxxU2D5s56a92YSCD5GB1-StZBDi16nYo1WHwFv5PUZqOa62lW3NJXqOIDPA9abHjsEIS8c4IrrwxtMLvcvBvRBOe4bZ1dUYRrDqOJEvDxL1_L_dSM9HrZSGIG1gLIWkUNB23I1lHfFq0bE-ZKKCWlx1N_4msnN2UteSSb1Hqbw7S5ehq9TqKPzZCiLq5Reg"/></div><div class="text-center"><span class="scent-chip bg-zinc-100 px-2 py-0.5 rounded-full mb-2 inline-block">Oriental</span><h3 class="font-headline text-xl mb-1">Night Desire</h3><p class="font-label text-sm">₹2999</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChxrP8FXIiltVGAv9eVnzUfzuQ-_veaRVgxYhnnXaiopTg4OYDYTJJRbIoWoKLGUpb6I7K2k6FHGwboYqwJAeeriB1TzWTVcDUSFF7pyWSu_gH1uoGd8EgwUBAHhxzKhYsblUu47uwdBLvVPH8_1tHhaZgfdull0D2leGEapeG-86eMvGjzQ7aTdJLZUPYUZunMFmnrAL4Jw8Cad4j3BplgwSeTcTNGl8bO_1r1l4ikHpHzOlvAkCvmYhkE21iX2HM3jOR_sSugog"/></div><div class="text-center"><span class="scent-chip bg-zinc-100 px-2 py-0.5 rounded-full mb-2 inline-block">Fresh</span><h3 class="font-headline text-xl mb-1">Aqua Marine</h3><p class="font-label text-sm">₹1899</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0UYmZi8QogUCgDvybMOnkfR5HFDNQxVYULrXXLpPWh08oDaYu83MuT4cceATcZ9JbY1gQDfTGx7fECfMZxP5-9JBex0TyBT1k-t7_Oy4JQ3MiiZCk4xNDOMY6kz5aI_BYQBE-1IM7ErHFm5M2o-K3-_XahULr2pYAM2A_EWpfxceYgL0JD8kLV8YASqrFk79KfxTFyj8Og2MtcUMPOCRcFIjGR5Z6uZGdKdAL0TVzQL4fs8mvLaeEXsJ8MxNhiyKeU0jI9Rlpsr0"/></div><div class="text-center"><span class="scent-chip bg-zinc-100 px-2 py-0.5 rounded-full mb-2 inline-block">Oriental</span><h3 class="font-headline text-xl mb-1">Red Vanilla</h3><p class="font-label text-sm">₹2399</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcEWM5QEC9CKQ0yq3ZmCzotAswZiyXc_si8UW1ruGNg34tUCotQ4MyfcCc2alDBc33o-QpGIiy-foepKM3sMOwd_GAz2oK7Re2WqQ_qALxjf8_ZsCkAEiXVZeF-jDm3olTKrx0O46Xt93tV3MmhMGAA9E-yKekyxS_Jzcmv_1alJk-OTO4y5xe1E1qAf4YjKFD6XxEoiH09ysHwDsf15ogdA0aVB7bvNRVMvKkx0UY3i3Vo5s-nEaSC7KlkbSV97ty0VAj6B6nBfI"/></div><div class="text-center"><span class="scent-chip bg-zinc-100 px-2 py-0.5 rounded-full mb-2 inline-block">Floral</span><h3 class="font-headline text-xl mb-1">White Jasmine</h3><p class="font-label text-sm">₹2099</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQxTlK8RIA_-9AqiKIV0_8vcVZTpmJwY05LpJfueQLmEty05l8QoYo5RJRnmcXDr55cFmtqYqwopI7SZ7jX1y0OOKfzL97jGsmhf99kdPOrO7t7Ve91wcnJRnnribq1uX5LNCE64QgqGXQ88qHJzGyrbFynKRopEDNrgccATojt6nrqk7vZMRewQZjMU4fanQRQVaP0xgS7qyNHTwI6P8KbQvWpZajc-S1wpVSpokvuadenuFPkjCg94gbY6zqht96n8EkMWQ0G60"/></div><div class="text-center"><span class="scent-chip bg-zinc-100 px-2 py-0.5 rounded-full mb-2 inline-block">Woody</span><h3 class="font-headline text-xl mb-1">Urban Spice</h3><p class="font-label text-sm">₹2499</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBBXjAxcV65XFykmu84b4zyrq-m2qbLsDUedNTpiEGV45RSCGa43l8t-YbQPUsW7yjSL1DVhCbYw3S0LePUSiZCjw02oZPvFHD0aQNpx0lp6P2xKMaeH25-wTeO8o1BOABcK00fm2YHZwByxZyFhZRueKzcpGfuASEhhigE7NoDUUlVkxZ1rzL1InrN7m6niA3mLvBbeOt-bPtSEkvs9RvyGRYElcHSk94AOWy0bRNLF07zr8OdFv-7QGGrkzxAKT45Fim73bxeQU"/></div><div class="text-center"><span class="scent-chip bg-zinc-100 px-2 py-0.5 rounded-full mb-2 inline-block">Citrus</span><h3 class="font-headline text-xl mb-1">Lemon Zest</h3><p class="font-label text-sm">₹1699</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg overflow-hidden"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn_iywvV3jfobcYOu21uyVK2g8jWz1KK5R4-h4HynlbkHo-6pDf6VepkQyKlzy7pT2ixrFs4yUOgy_nS7r0_4blz5vSc5w40N87v52tEdgOpTcIVMIqjOyPiz__S7MWkbGkvOMcIyqqlAouQB6uX4vxP6Qmd5r64QRoi3aOJGUJYEIVdlxZAD25SxSjSRAdgSf72Bkcivdq05yCJBmSgo9-O1ALHNK5KbVPa4czY9rZ9f_FaetemswyLs2FQyVad-UBWH7_1SAO8w"/></div><div class="text-center"><span class="scent-chip bg-zinc-100 px-2 py-0.5 rounded-full mb-2 inline-block">Fresh</span><h3 class="font-headline text-xl mb-1">Cool Water Pro</h3><p class="font-label text-sm">₹1999</p></div></div>
+<!-- Batch of 18 more to reach 30 (Abbreviated for structure but full 30 logic) -->
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Oud Royale</h3><p class="font-label text-sm">₹3199</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Pink Blossom</h3><p class="font-label text-sm">₹2199</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Citrus Gold</h3><p class="font-label text-sm">₹1899</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Mystic Night</h3><p class="font-label text-sm">₹2899</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Ice Fresh</h3><p class="font-label text-sm">₹1799</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Black Orchid</h3><p class="font-label text-sm">₹2799</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Sandal Touch</h3><p class="font-label text-sm">₹2499</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Rose Elite</h3><p class="font-label text-sm">₹2399</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Orange Splash</h3><p class="font-label text-sm">₹1699</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Blue Wave</h3><p class="font-label text-sm">₹1999</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Smoky Oud</h3><p class="font-label text-sm">₹3099</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Floral Dream</h3><p class="font-label text-sm">₹2199</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Citrus Punch</h3><p class="font-label text-sm">₹1799</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Aqua Fresh Max</h3><p class="font-label text-sm">₹2099</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Pure Musk</h3><p class="font-label text-sm">₹2299</p></div></div>
+<div class="group fade-in-up"><div class="aspect-[4/5] bg-zinc-50 mb-6 rounded-lg"></div><div class="text-center"><h3 class="font-headline text-xl mb-1">Vanilla Sky</h3><p class="font-label text-sm">₹2399</p></div></div>
+</section>
+<!-- Editorial Moment -->
+<section class="mt-32 py-32 bg-zinc-50 px-12">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-4xl text-zinc-900 mb-8" data-icon="auto_awesome">auto_awesome</span>
+<h2 class="font-headline text-5xl mb-8 leading-tight italic">"Perfume is the most intense form of memory."</h2>
+<p class="font-body text-zinc-500 text-lg mb-12 max-w-xl mx-auto">Join our inner circle for early access to limited edition olfactory compositions and gallery exhibitions.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+<input class="bg-transparent border-b border-zinc-300 focus:border-on-surface focus:ring-0 w-full md:w-80 font-label text-[10px] tracking-widest py-3" placeholder="YOUR EMAIL ADDRESS" type="email"/>
+<button class="bg-zinc-900 text-white px-10 py-3 text-[10px] font-label uppercase tracking-[0.2em] hover:bg-zinc-800 transition-colors">Subscribe</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="mb-8 md:mb-0">
+<span class="text-xl font-black text-zinc-900 dark:text-zinc-50 mb-4 block">luxury-perfume-store</span>
+<p class="font-serif text-[11px] tracking-tight text-zinc-500 dark:text-zinc-400">© 2024 luxury-perfume-store PARFUMERIE. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-serif text-[11px] tracking-tight">
+<a class="text-zinc-500 dark:text-zinc-400 hover:underline transition-all" href="#">Sustainability</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:underline transition-all" href="#">Shipping &amp; Returns</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:underline transition-all" href="#">Contact Us</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:underline transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+    // Simple intersection observer for reveal animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-up');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+</script>
+</body></html>

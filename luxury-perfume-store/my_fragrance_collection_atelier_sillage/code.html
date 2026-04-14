@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&amp;family=Manrope:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "primary-container": "#e5e2e1",
+                "inverse-surface": "#0d0e0e",
+                "on-surface-variant": "#5c605d",
+                "surface-container-low": "#f3f4f1",
+                "on-primary-fixed": "#403f3f",
+                "outline-variant": "#afb3b0",
+                "on-surface": "#2f3331",
+                "on-secondary-container": "#5d503a",
+                "on-primary": "#faf7f6",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed": "#e5e2e1",
+                "primary-fixed-dim": "#d6d4d3",
+                "tertiary-container": "#f9f3ea",
+                "error-container": "#fe8983",
+                "on-secondary-fixed": "#4a3e29",
+                "secondary-container": "#f4e0c3",
+                "surface-variant": "#e0e3e0",
+                "surface-tint": "#5f5e5e",
+                "outline": "#777c79",
+                "on-error": "#fff7f6",
+                "on-tertiary-fixed": "#4c4943",
+                "on-secondary-fixed-variant": "#675a43",
+                "on-tertiary-fixed-variant": "#69665f",
+                "error-dim": "#4e0309",
+                "surface-container": "#edeeeb",
+                "on-error-container": "#752121",
+                "surface-container-high": "#e6e9e6",
+                "surface-bright": "#faf9f7",
+                "secondary-dim": "#5f513b",
+                "on-tertiary": "#fef8ef",
+                "primary-dim": "#535252",
+                "tertiary-fixed": "#f9f3ea",
+                "tertiary-dim": "#56534c",
+                "surface-container-highest": "#e0e3e0",
+                "secondary-fixed": "#f4e0c3",
+                "on-primary-container": "#525151",
+                "surface-dim": "#d6dbd7",
+                "on-tertiary-container": "#5f5b54",
+                "background": "#faf9f7",
+                "on-secondary": "#fff8f1",
+                "tertiary-fixed-dim": "#ebe4db",
+                "tertiary": "#625f58",
+                "inverse-primary": "#ffffff",
+                "on-primary-fixed-variant": "#5c5b5b",
+                "primary": "#5f5e5e",
+                "surface": "#faf9f7",
+                "secondary-fixed-dim": "#e5d2b6",
+                "inverse-on-surface": "#9d9d9b",
+                "error": "#9f403d",
+                "on-background": "#2f3331",
+                "secondary": "#6b5d46"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Newsreader"],
+                "body": ["Manrope"],
+                "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        .text-gallery-logo { font-family: 'Newsreader'; font-style: italic; }
+        .font-newsreader { font-family: 'Newsreader'; }
+        .font-manrope { font-family: 'Manrope'; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-manrope antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f7]/80 dark:bg-[#1A1A1A]/80 backdrop-blur-xl flex justify-between items-center px-8 py-6 max-w-full">
+<div class="text-2xl font-newsreader uppercase tracking-[0.2em] text-[#2f3331] dark:text-[#faf9f7]">
+            THE GALLERY
+        </div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-newsreader italic tracking-tight text-[#5f5e5e] dark:text-[#afb3b0] hover:opacity-80 transition-opacity duration-500 ease-[cubic-bezier(0.2,0,0,1)]" href="#">Curations</a>
+<a class="font-newsreader italic tracking-tight text-[#5f5e5e] dark:text-[#afb3b0] hover:opacity-80 transition-opacity duration-500 ease-[cubic-bezier(0.2,0,0,1)]" href="#">Journal</a>
+<a class="font-newsreader italic tracking-tight text-[#5f5e5e] dark:text-[#afb3b0] hover:opacity-80 transition-opacity duration-500 ease-[cubic-bezier(0.2,0,0,1)] border-b-[0.5px] border-[#2f3331] pb-1 text-[#2f3331] dark:text-[#faf9f7]" href="#">Archive</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="material-symbols-outlined text-[#5f5e5e] dark:text-[#afb3b0] cursor-pointer">shopping_bag</div>
+<div class="md:hidden material-symbols-outlined text-[#5f5e5e]">menu</div>
+</div>
+</nav>
+<div class="flex pt-24 min-h-screen">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col h-screen sticky top-24 p-12 gap-8 w-80 bg-[#faf9f7] dark:bg-[#1A1A1A] border-r-[0.5px] border-opacity-10 border-[#afb3b0]">
+<div class="mb-4">
+<h2 class="font-newsreader text-xl italic text-[#2f3331] dark:text-[#faf9f7]">The Collector</h2>
+<p class="font-manrope uppercase tracking-[0.1em] text-[10px] opacity-60">Curating since 2023</p>
+</div>
+<nav class="flex flex-col gap-6">
+<a class="flex items-center gap-4 group transition-all duration-500 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome_motion</span>
+<span class="font-manrope uppercase tracking-[0.1em] text-[10px] font-bold text-[#2f3331] dark:text-[#faf9f7]">Collection</span>
+</a>
+<a class="flex items-center gap-4 group transition-all duration-500 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-manrope uppercase tracking-[0.1em] text-[10px] text-[#5f5e5e]/60 dark:text-[#afb3b0]/60 hover:tracking-[0.15em]">Discover</span>
+</a>
+<a class="flex items-center gap-4 group transition-all duration-500 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined">flare</span>
+<span class="font-manrope uppercase tracking-[0.1em] text-[10px] text-[#5f5e5e]/60 dark:text-[#afb3b0]/60 hover:tracking-[0.15em]">Scent Profile</span>
+</a>
+<a class="flex items-center gap-4 group transition-all duration-500 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-manrope uppercase tracking-[0.1em] text-[10px] text-[#5f5e5e]/60 dark:text-[#afb3b0]/60 hover:tracking-[0.15em]">Wishlist</span>
+</a>
+<a class="flex items-center gap-4 group transition-all duration-500 hover:translate-x-1" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-manrope uppercase tracking-[0.1em] text-[10px] text-[#5f5e5e]/60 dark:text-[#afb3b0]/60 hover:tracking-[0.15em]">Settings</span>
+</a>
+</nav>
+<button class="mt-12 w-full py-4 bg-on-surface text-surface uppercase tracking-[0.1em] text-[10px] font-bold transition-opacity hover:opacity-80">
+                Add New Scent
+            </button>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 px-8 md:px-16 py-12 bg-background">
+<!-- Header Section -->
+<header class="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-xl">
+<h1 class="text-5xl md:text-7xl font-newsreader italic tracking-tight mb-6">Personal Collection</h1>
+<p class="text-on-surface-variant font-manrope text-sm leading-relaxed max-w-sm">
+                        A digital vault of your olfactory journey. Curate, organize, and reflect on the scents that define your presence.
+                    </p>
+</div>
+<!-- Filters & Sort -->
+<div class="flex flex-wrap gap-4 items-center">
+<div class="relative group">
+<label class="block font-manrope uppercase tracking-[0.1em] text-[9px] mb-1 opacity-60">Sort By</label>
+<select class="appearance-none bg-transparent border-b border-outline-variant/20 py-1 pr-8 focus:outline-none focus:border-on-surface text-xs uppercase tracking-widest font-medium cursor-pointer">
+<option>Recent</option>
+<option>Name</option>
+<option>Frequency</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 bottom-1 pointer-events-none text-[14px]">expand_more</span>
+</div>
+<div class="relative group">
+<label class="block font-manrope uppercase tracking-[0.1em] text-[9px] mb-1 opacity-60">Occasion</label>
+<select class="appearance-none bg-transparent border-b border-outline-variant/20 py-1 pr-8 focus:outline-none focus:border-on-surface text-xs uppercase tracking-widest font-medium cursor-pointer">
+<option>All Scents</option>
+<option>Signature</option>
+<option>Date Night</option>
+<option>Fresh</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 bottom-1 pointer-events-none text-[14px]">filter_list</span>
+</div>
+</div>
+</header>
+<!-- Bento/Editorial Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-24 gap-x-12">
+<!-- Card 1 -->
+<article class="flex flex-col gap-6">
+<div class="relative aspect-[4/5] bg-surface-container-low overflow-hidden group cursor-pointer">
+<img alt="Perfume bottle" class="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.2,0,0,1)]" data-alt="luxury minimalist glass perfume bottle with dark wooden cap against a soft beige studio background, dramatic side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcQwMeG81qaJr165oXbGe8ONfmc4H1ptUN9s5OPrOdX3yT9oTmCn7I0al2a3hNlJjK6CXKWcnisUN2fmLixi8Nzq_-JzYNOlwfUbrzMbiC4YYRYru7okAdoL7z-817EpEfR1JhAcnjT7cKQQuQ6mhEHODLcz5OP8B_xA3OsM048zVU8Mi9l0aFT4py7Fe6nIcLEvRBjVg40zmkAjzYfjTZGxVGv_snLBKp200_586TFaoCb6IHsUJypTsskOg1fdWO7rZcdsjoWys"/>
+<div class="absolute top-4 right-4 bg-white/40 backdrop-blur-md p-2 cursor-pointer hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<p class="font-manrope uppercase tracking-[0.2em] text-[10px] mb-1 opacity-60">BYREDO</p>
+<h3 class="font-newsreader text-2xl mb-3">Gypsy Water</h3>
+<p class="font-manrope italic text-sm text-on-surface-variant mb-4 leading-relaxed px-4">"Reminds me of a summer in Grasse, early morning pine needles and citrus."</p>
+<div class="flex flex-wrap justify-center gap-2">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[9px] font-bold uppercase tracking-[0.1em]">Signature</span>
+<span class="px-2 py-1 bg-surface-container text-on-surface-variant text-[9px] font-bold uppercase tracking-[0.1em]">Fresh</span>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="flex flex-col gap-6 md:mt-12">
+<div class="relative aspect-[4/5] bg-surface-container-low overflow-hidden group cursor-pointer">
+<img alt="Perfume bottle" class="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.2,0,0,1)]" data-alt="amber glass perfume bottle with minimalist label on a stone pedestal with soft afternoon shadows and neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqqYf_X2g7g0u_biYhx_w1MNahLHMZn2lGQiY9tY1ELfhuFzxFInWoTtBdHRNPZ6KJHlWAuY_CImDI3dXv8jmmOduLLRpU3IbOhcbtlQRkMDDmDN_g7Zy2ySvQNVAZI743hfhhd1TyZoVcwmWlT2rzRs0E4PF5dl28V6LbaZWepzDTmhDaOzTyMu3_MF5ppvdGjNrxr0HoUGSpwrML8YcnQysUmKjaM6pMrXrv6tMfXMHwDlzik545L1ESMYZLnicz3pvv6BEQjrc"/>
+<div class="absolute top-4 right-4 bg-white/40 backdrop-blur-md p-2 cursor-pointer hover:bg-white transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<p class="font-manrope uppercase tracking-[0.2em] text-[10px] mb-1 opacity-60">LE LABO</p>
+<h3 class="font-newsreader text-2xl mb-3">Santal 33</h3>
+<p class="font-manrope italic text-sm text-on-surface-variant mb-4 leading-relaxed px-4">"The scent of old bookstores and rainy city nights."</p>
+<div class="flex flex-wrap justify-center gap-2">
+<span class="px-2 py-1 bg-surface-container text-on-surface-variant text-[9px] font-bold uppercase tracking-[0.1em]">Daily</span>
+<span class="px-2 py-1 bg-surface-container text-on-surface-variant text-[9px] font-bold uppercase tracking-[0.1em]">Woody</span>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="flex flex-col gap-6">
+<div class="relative aspect-[4/5] bg-surface-container-low overflow-hidden group cursor-pointer">
+<img alt="Perfume bottle" class="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.2,0,0,1)]" data-alt="sleek square black perfume bottle with gold detailing sitting on a silk cloth with warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3QbnBrsunj9gBuZxIQv7Im3rKVfUuCwjHub4NYdI6p09OFe-k_Z6s1vfmWumNZXPKbt507WpK0uUkyYccLtjiwZiHSI9suVll989yu8qtkU2EWkwaN_BhTr3CrUgrt3Ag_vKsSiJUAXyVd6fPe9cYVSrOmGtFcLXXx6NM4t5hBHGfutvmerORoZ7XQ1uEVefoMABKwVdWxNyWzdmqSVghbt7lTCKzHAPKwz9zJq7fuALbAEX1zFumB9dV2Xm6-4y5_WKcsfmoqio"/>
+<div class="absolute top-4 right-4 bg-white/40 backdrop-blur-md p-2 cursor-pointer hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<p class="font-manrope uppercase tracking-[0.2em] text-[10px] mb-1 opacity-60">FREDERIC MALLE</p>
+<h3 class="font-newsreader text-2xl mb-3">Portrait of a Lady</h3>
+<p class="font-manrope italic text-sm text-on-surface-variant mb-4 leading-relaxed px-4">"Dramatic, dark rose. Best paired with silk and a late evening cocktail."</p>
+<div class="flex flex-wrap justify-center gap-2">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[9px] font-bold uppercase tracking-[0.1em]">Date Night</span>
+<span class="px-2 py-1 bg-surface-container text-on-surface-variant text-[9px] font-bold uppercase tracking-[0.1em]">Floral</span>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="flex flex-col gap-6 md:-mt-12">
+<div class="relative aspect-[4/5] bg-surface-container-low overflow-hidden group cursor-pointer">
+<img alt="Perfume bottle" class="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.2,0,0,1)]" data-alt="cylindrical perfume bottle with clear glass showing pale yellow liquid, bright airy atmosphere with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-G25Ey4RV-KyYDi3QtkjUzzjLcRlseR_AUMmIfLCp3A3l_9JTFnm8ekQx3pvNJNOQT3G75Rge9W4ZZdga5KUv96GAN3gwLSat4oOuk41QzxiZyWTsZsv5sdPWtnEnNcZGrY70BbKK3r6Y5tRiCL37OnDLzQGANYH_eJjYF0qJnTYk91e4BviD7MV_QERqI0hT71qGGVYMsgRA4cHwKj-Hr1FnNS18Z5ae3P7eI1Afv3K8e0ZZ0dNph67EmY20-NUIk-jpf94mkz8"/>
+<div class="absolute top-4 right-4 bg-white/40 backdrop-blur-md p-2 cursor-pointer hover:bg-white transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<p class="font-manrope uppercase tracking-[0.2em] text-[10px] mb-1 opacity-60">MAISON MARGIELA</p>
+<h3 class="font-newsreader text-2xl mb-3">Lazy Sunday Morning</h3>
+<p class="font-manrope italic text-sm text-on-surface-variant mb-4 leading-relaxed px-4">"Clean linen and soft sunlight. My favorite weekend companion."</p>
+<div class="flex flex-wrap justify-center gap-2">
+<span class="px-2 py-1 bg-surface-container text-on-surface-variant text-[9px] font-bold uppercase tracking-[0.1em]">Fresh</span>
+<span class="px-2 py-1 bg-surface-container text-on-surface-variant text-[9px] font-bold uppercase tracking-[0.1em]">Soft</span>
+</div>
+</div>
+</article>
+<!-- Card 5 (Asymmetric Placeholder for dynamic feel) -->
+<article class="flex flex-col gap-6 lg:col-span-2 lg:flex-row lg:items-center bg-surface-container-lowest p-8 border-[0.5px] border-outline-variant/10">
+<div class="relative w-full lg:w-1/2 aspect-square bg-surface-container overflow-hidden group">
+<img alt="Artistic perfume shot" class="w-full h-full object-cover grayscale-[40%] group-hover:scale-105 transition-transform duration-1000" data-alt="conceptual close-up of perfume spray misting in front of a dark textured background, light catching the droplets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUOcQmgv9httjK5A85BhjWHFndmYRX5cGj3nfvXIDKb8tTW9AhxzW0FiJ_TUfF5R53R5ywcx_l13tYjmKi27-JREdgKFTWsKDa9neC8100mtBFYCw3pSNLZbROjKjgkcpz6UfCFGzxaA1opheAf6QOHTpeZ31PfJ0Q6xafJ7naTbMwJXugD8QMnWY6QpTT4CG-kTmZneGCLarBQYB0Kve__4T358nUCQu0uV5TynKO6ABNwWirOI0ARDBJSHV0a2WKVpCMfqjTz6M"/>
+</div>
+<div class="flex-1 flex flex-col items-start gap-4 lg:pl-12">
+<p class="font-manrope uppercase tracking-[0.2em] text-[10px] opacity-60">MEMO PARIS</p>
+<h3 class="font-newsreader text-4xl italic">African Leather</h3>
+<p class="font-manrope text-on-surface-variant text-sm leading-relaxed">
+                            "Bold, spicy, and evocative. I wear this when I need to feel confident and untethered. A masterpiece of cardamom and leather."
+                        </p>
+<div class="flex gap-4 mt-4">
+<span class="material-symbols-outlined text-on-surface cursor-pointer">favorite</span>
+<span class="material-symbols-outlined text-on-surface cursor-pointer">share</span>
+</div>
+</div>
+</article>
+</div>
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full mt-24 flex flex-col items-center py-20 px-8 bg-[#f3f4f1] dark:bg-[#121212] border-t-[0.5px] border-opacity-10 border-[#afb3b0]">
+<div class="font-newsreader italic text-lg text-[#5f5e5e] dark:text-[#afb3b0] mb-8">
+            THE GALLERY
+        </div>
+<div class="flex gap-12 mb-12">
+<a class="font-manrope text-[10px] tracking-widest uppercase opacity-60 hover:opacity-100 transition-opacity" href="#">Terms</a>
+<a class="font-manrope text-[10px] tracking-widest uppercase opacity-60 hover:opacity-100 transition-opacity" href="#">Privacy</a>
+<a class="font-manrope text-[10px] tracking-widest uppercase opacity-60 hover:opacity-100 transition-opacity" href="#">Curation Policy</a>
+</div>
+<div class="font-manrope text-[10px] tracking-widest uppercase opacity-60">
+            © 2024 THE OLFACTORY GALLERY
+        </div>
+</footer>
+<!-- Mobile BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full bg-[#faf9f7]/95 backdrop-blur-xl border-t-[0.5px] border-outline-variant/10 z-50 flex justify-around py-4">
+<div class="flex flex-col items-center gap-1 text-[#2f3331]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome_motion</span>
+<span class="font-manrope text-[8px] uppercase tracking-tighter">Collection</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-manrope text-[8px] uppercase tracking-tighter">Discover</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-manrope text-[8px] uppercase tracking-tighter">Wishlist</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-manrope text-[8px] uppercase tracking-tighter">Settings</span>
+</div>
+</nav>
+</body></html>

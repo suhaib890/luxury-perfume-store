@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#f9f3ea",
+                    "inverse-on-surface": "#9d9d9b",
+                    "on-secondary-fixed": "#4a3e29",
+                    "background": "#faf9f7",
+                    "secondary-container": "#f4e0c3",
+                    "error-dim": "#4e0309",
+                    "error-container": "#fe8983",
+                    "tertiary": "#625f58",
+                    "on-error-container": "#752121",
+                    "secondary-dim": "#5f513b",
+                    "error": "#9f403d",
+                    "inverse-primary": "#ffffff",
+                    "on-primary-fixed": "#403f3f",
+                    "tertiary-fixed-dim": "#ebe4db",
+                    "surface-variant": "#e0e3e0",
+                    "on-secondary": "#fff8f1",
+                    "inverse-surface": "#0d0e0e",
+                    "surface-container": "#edeeeb",
+                    "outline-variant": "#afb3b0",
+                    "primary-fixed-dim": "#d6d4d3",
+                    "outline": "#777c79",
+                    "tertiary-dim": "#56534c",
+                    "on-secondary-fixed-variant": "#675a43",
+                    "on-primary-container": "#525151",
+                    "on-error": "#fff7f6",
+                    "surface-container-highest": "#e0e3e0",
+                    "secondary": "#6b5d46",
+                    "surface": "#faf9f7",
+                    "on-surface-variant": "#5c605d",
+                    "tertiary-fixed": "#f9f3ea",
+                    "on-tertiary-fixed": "#4c4943",
+                    "primary-fixed": "#e5e2e1",
+                    "on-tertiary-fixed-variant": "#69665f",
+                    "on-primary": "#faf7f6",
+                    "surface-tint": "#5f5e5e",
+                    "secondary-fixed-dim": "#e5d2b6",
+                    "on-background": "#2f3331",
+                    "on-surface": "#2f3331",
+                    "on-secondary-container": "#5d503a",
+                    "surface-container-high": "#e6e9e6",
+                    "primary-dim": "#535252",
+                    "surface-container-low": "#f3f4f1",
+                    "secondary-fixed": "#f4e0c3",
+                    "on-primary-fixed-variant": "#5c5b5b",
+                    "surface-dim": "#d6dbd7",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#e5e2e1",
+                    "primary": "#5f5e5e",
+                    "on-tertiary-container": "#5f5b54",
+                    "on-tertiary": "#fef8ef",
+                    "surface-bright": "#faf9f7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Manrope", "sans-serif"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 1.25rem;
+        }
+        .editorial-underline {
+            position: relative;
+        }
+        .editorial-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 0.5px;
+            background-color: currentColor;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f7]/80 dark:bg-[#1A1A1A]/80 backdrop-blur-xl flex justify-between items-center px-6 md:px-12 py-8 w-full transition-all duration-500 ease-in-out">
+<div class="text-2xl font-light tracking-[0.2em] uppercase text-[#2f3331] dark:text-[#faf9f7] font-['Newsreader']">
+            ATELIER SILLAGE
+        </div>
+<div class="hidden md:flex items-center gap-10 font-['Newsreader'] italic tracking-tight">
+<a class="text-[#2f3331]/50 dark:text-[#faf9f7]/50 hover:text-[#2f3331] transition-colors" href="#">ARCHIVE</a>
+<a class="text-[#2f3331]/50 dark:text-[#faf9f7]/50 hover:text-[#2f3331] transition-colors" href="#">CURATION</a>
+<a class="text-[#2f3331]/50 dark:text-[#faf9f7]/50 hover:text-[#2f3331] transition-colors" href="#">WISHLIST</a>
+<a class="text-[#2f3331] dark:text-[#faf9f7] border-b-[0.5px] border-[#2f3331] pb-1" href="#">ATELIER</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-[#2f3331]">search</button>
+<button class="text-[10px] tracking-[0.2em] font-label font-medium text-[#2f3331]">LOGOUT</button>
+</div>
+</nav>
+<main class="pt-40 pb-32">
+<!-- Hero Section -->
+<header class="max-w-7xl mx-auto px-6 md:px-12 mb-24">
+<div class="max-w-2xl">
+<h1 class="text-5xl md:text-7xl font-headline italic tracking-tighter leading-tight mb-6">The Private Archive</h1>
+<p class="text-on-surface-variant font-headline text-xl italic tracking-wide">A curated journey of olfactory memories.</p>
+</div>
+</header>
+<!-- Actions Bar -->
+<section class="max-w-7xl mx-auto px-6 md:px-12 mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 pb-8 border-b border-outline-variant/20">
+<div class="flex items-center gap-12">
+<button class="group flex items-center gap-3 transition-all duration-500 ease-in-out">
+<span class="w-10 h-10 flex items-center justify-center bg-on-surface text-surface hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined">add</span>
+</span>
+<span class="text-[11px] tracking-[0.2em] font-label font-bold uppercase">Add New Fragrance</span>
+</button>
+</div>
+<div class="flex flex-wrap gap-x-12 gap-y-4">
+<div class="flex flex-col gap-2">
+<span class="text-[9px] tracking-[0.15em] text-on-surface-variant uppercase font-bold">Filter By</span>
+<div class="flex gap-6">
+<button class="text-xs font-label tracking-wide border-b border-transparent hover:border-on-surface transition-all">By Note</button>
+<button class="text-xs font-label tracking-wide border-b border-transparent hover:border-on-surface transition-all">By Date</button>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-[9px] tracking-[0.15em] text-on-surface-variant uppercase font-bold">Sort</span>
+<div class="flex gap-6">
+<button class="text-xs font-label tracking-wide border-b border-on-surface font-bold">Recent</button>
+<button class="text-xs font-label tracking-wide border-b border-transparent hover:border-on-surface transition-all">A-Z</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Collection Grid -->
+<section class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24">
+<!-- Fragrance Card 1 -->
+<article class="group">
+<div class="aspect-[3/4] bg-surface-container-low mb-8 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Minimalist perfume bottle on a neutral beige background with soft cinematic lighting and delicate shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAetkb5SKIoX2YvoRKZGljdviYMaPsGlE8qP5JNL2978aVfVOadmVPNsEUP-wONSzBD_lDd8VGb0qmOL0tJkm_GWSXrf9xQQcegkBCtFVFCa-jlDFqei96WGRMy_EW34q1I8-FL2Sy-JDw4Qhw5LUIdszFcbELhyn56nmloWBsmmObFfVuEkFhdq3VzBdUfsVp69yrwEH2lqlD2vJMlK-kC_4CxOBZZVHEFqdXY8PRHNtE-_U5qwO3jkjDc4dTniAeMBkXNCe9Os9g"/>
+<div class="absolute inset-0 bg-on-surface/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<a class="font-headline italic text-on-surface editorial-underline" href="#">View Journal</a>
+</div>
+</div>
+<div class="space-y-4 text-center px-4">
+<div class="space-y-1">
+<p class="text-[10px] tracking-[0.2em] text-on-surface-variant font-label uppercase">Le Labo</p>
+<h3 class="text-2xl font-headline italic tracking-tight">Santal 33</h3>
+</div>
+<div class="flex justify-center gap-2">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-label tracking-wider uppercase">Sandalwood</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-label tracking-wider uppercase">Papyrus</span>
+</div>
+<div class="pt-4 border-t border-outline-variant/10 space-y-3">
+<p class="text-[9px] tracking-[0.1em] text-on-surface-variant font-label">ACQUIRED: OCT 2023</p>
+<p class="text-sm font-headline italic text-on-surface/80 leading-relaxed">"Reminds me of rainy mornings in Soho; sophisticated yet raw."</p>
+</div>
+</div>
+</article>
+<!-- Fragrance Card 2 -->
+<article class="group lg:mt-12">
+<div class="aspect-[3/4] bg-[#f4f1f3] mb-8 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Elegant glass fragrance bottle on a dusty rose surface with high-end editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgKrqEMOnCQ1jebdlQerd4mxyh6vvTwUMU6sFC0pYjfu4fQRBgKJa-ZcgRRcL9CChBN6waJlh2_V0nt9yHHdz_T5EJV95vG4VlqfABY_je_RgJUlDtBik3lvrHinWjgb4p43i6UOnfuidGX5QFrWfJuVrhlNOZdbkN-gqdOjDa3BljwnDZA5zu2Y3KrTG3IPMTM8QAjZeLJGe_TXnHkpsbtOaRDiN9mKIVIhxEd-HXe4bxsmuqG-UxEWPT_M4VEchDEAb7AYoFIcc"/>
+<div class="absolute inset-0 bg-on-surface/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<a class="font-headline italic text-on-surface editorial-underline" href="#">View Journal</a>
+</div>
+</div>
+<div class="space-y-4 text-center px-4">
+<div class="space-y-1">
+<p class="text-[10px] tracking-[0.2em] text-on-surface-variant font-label uppercase">Byredo</p>
+<h3 class="text-2xl font-headline italic tracking-tight">Gypsy Water</h3>
+</div>
+<div class="flex justify-center gap-2">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-label tracking-wider uppercase">Bergamot</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-label tracking-wider uppercase">Pine</span>
+</div>
+<div class="pt-4 border-t border-outline-variant/10 space-y-3">
+<p class="text-[9px] tracking-[0.1em] text-on-surface-variant font-label">ACQUIRED: JUNE 2023</p>
+<p class="text-sm font-headline italic text-on-surface/80 leading-relaxed">"The scent of a nomadic soul. Worn during the summer in Provence."</p>
+</div>
+</div>
+</article>
+<!-- Fragrance Card 3 -->
+<article class="group">
+<div class="aspect-[3/4] bg-[#f1f4f2] mb-8 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Luxury perfume flacon on a muted sage green background with soft natural window light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNZppbOY6ut5mheo0D5EziAaaBLvxEs0r-DyqDUtsjK0sd7nVH5u4s9RPvNuNCRrKqujeFIek2nPySdpAbAmYNmhOden4KTBKwPUS5jWb1koN6dT5hbd9g0J2lxoxry531uDwnoj4rscvkg7TCsghvkMdbEMwxWQ5RJ7Fp9bXR87lsk77jKvhWQoAj-Fp9LBvWU20aCuQa0XWLZkkCf8H1Repntk5HZWLUMpVdSPcOu93kd_-QyypYiaabVFkUe2dz6b0gKHxSxz0"/>
+<div class="absolute inset-0 bg-on-surface/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<a class="font-headline italic text-on-surface editorial-underline" href="#">View Journal</a>
+</div>
+</div>
+<div class="space-y-4 text-center px-4">
+<div class="space-y-1">
+<p class="text-[10px] tracking-[0.2em] text-on-surface-variant font-label uppercase">Diptyque</p>
+<h3 class="text-2xl font-headline italic tracking-tight">Philosykos</h3>
+</div>
+<div class="flex justify-center gap-2">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-label tracking-wider uppercase">Fig Leaf</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-label tracking-wider uppercase">Cedar</span>
+</div>
+<div class="pt-4 border-t border-outline-variant/10 space-y-3">
+<p class="text-[9px] tracking-[0.1em] text-on-surface-variant font-label">ACQUIRED: MARCH 2024</p>
+<p class="text-sm font-headline italic text-on-surface/80 leading-relaxed">"A sudden burst of green. My favorite companion for early spring."</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Signature Editorial Quote -->
+<section class="mt-48 mb-24 max-w-4xl mx-auto text-center px-6">
+<h2 class="text-3xl font-headline italic text-on-surface/60 leading-relaxed">
+                "Fragrance is the most intense form of memory. In each bottle, a fragment of time is preserved, waiting to be exhaled."
+            </h2>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#faf9f7] dark:bg-[#1A1A1A] w-full py-20 border-t-[0.5px] border-[#2f3331]/10">
+<div class="flex flex-col items-center gap-8 max-w-7xl mx-auto px-12">
+<div class="flex flex-wrap justify-center gap-x-12 gap-y-4">
+<a class="font-['Manrope'] text-[10px] tracking-[0.15em] uppercase text-[#2f3331]/40 hover:text-[#2f3331] transition-colors" href="#">PRIVACY</a>
+<a class="font-['Manrope'] text-[10px] tracking-[0.15em] uppercase text-[#2f3331]/40 hover:text-[#2f3331] transition-colors" href="#">TERMS</a>
+<a class="font-['Manrope'] text-[10px] tracking-[0.15em] uppercase text-[#2f3331]/40 hover:text-[#2f3331] transition-colors" href="#">ARCHIVE</a>
+<a class="font-['Manrope'] text-[10px] tracking-[0.15em] uppercase text-[#2f3331]/40 hover:text-[#2f3331] transition-colors" href="#">CONTACT</a>
+</div>
+<div class="font-['Manrope'] text-[10px] tracking-[0.15em] uppercase text-[#2f3331]">
+                © 2024 ATELIER SILLAGE. THE OLFACTORY GALLERY.
+            </div>
+</div>
+</footer>
+</body></html>

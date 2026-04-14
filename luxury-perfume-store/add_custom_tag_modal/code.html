@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Atelier Sillage | Add Scent Profile Tag</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#2f3331",
+                    "tertiary-container": "#f9f3ea",
+                    "tertiary": "#625f58",
+                    "surface-dim": "#d6dbd7",
+                    "tertiary-fixed-dim": "#ebe4db",
+                    "on-surface-variant": "#5c605d",
+                    "primary": "#5f5e5e",
+                    "surface-container-high": "#e6e9e6",
+                    "primary-dim": "#535252",
+                    "primary-container": "#e5e2e1",
+                    "on-secondary-fixed-variant": "#675a43",
+                    "on-primary": "#faf7f6",
+                    "on-primary-container": "#525151",
+                    "surface-container": "#edeeeb",
+                    "on-surface": "#2f3331",
+                    "on-secondary": "#fff8f1",
+                    "on-secondary-container": "#5d503a",
+                    "error": "#9f403d",
+                    "inverse-on-surface": "#9d9d9b",
+                    "secondary-container": "#f4e0c3",
+                    "on-tertiary-fixed-variant": "#69665f",
+                    "error-dim": "#4e0309",
+                    "on-tertiary-fixed": "#4c4943",
+                    "background": "#faf9f7",
+                    "secondary-dim": "#5f513b",
+                    "tertiary-dim": "#56534c",
+                    "surface-container-low": "#f3f4f1",
+                    "primary-fixed-dim": "#d6d4d3",
+                    "error-container": "#fe8983",
+                    "surface-tint": "#5f5e5e",
+                    "on-primary-fixed-variant": "#5c5b5b",
+                    "surface-bright": "#faf9f7",
+                    "surface": "#faf9f7",
+                    "secondary-fixed": "#f4e0c3",
+                    "tertiary-fixed": "#f9f3ea",
+                    "surface-container-highest": "#e0e3e0",
+                    "on-tertiary": "#fef8ef",
+                    "on-tertiary-container": "#5f5b54",
+                    "outline-variant": "#afb3b0",
+                    "on-secondary-fixed": "#4a3e29",
+                    "inverse-surface": "#0d0e0e",
+                    "inverse-primary": "#ffffff",
+                    "secondary-fixed-dim": "#e5d2b6",
+                    "on-primary-fixed": "#403f3f",
+                    "secondary": "#6b5d46",
+                    "primary-fixed": "#e5e2e1",
+                    "on-error-container": "#752121",
+                    "outline": "#777c79",
+                    "on-error": "#fff7f6",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e0e3e0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .backdrop-blur-luxury {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body antialiased">
+<!-- Top Navigation Anchor (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f7]/80 dark:bg-stone-900/80 backdrop-blur-xl flex justify-between items-center px-12 py-6 w-full">
+<div class="text-2xl font-['Newsreader'] uppercase tracking-[0.2em] text-[#2f3331] dark:text-stone-100">
+            Atelier Sillage
+        </div>
+<div class="hidden md:flex space-x-12">
+<a class="font-['Newsreader'] italic tracking-tight transition-opacity duration-500 ease-[cubic-bezier(0.2,0,0,1)] hover:opacity-80 text-[#5f5e5e] dark:text-stone-500 hover:text-[#2f3331]" href="#">Collections</a>
+<a class="font-['Newsreader'] italic tracking-tight transition-opacity duration-500 ease-[cubic-bezier(0.2,0,0,1)] hover:opacity-80 text-[#2f3331] dark:text-white border-b border-[#2f3331] pb-1" href="#">Archive</a>
+<a class="font-['Newsreader'] italic tracking-tight transition-opacity duration-500 ease-[cubic-bezier(0.2,0,0,1)] hover:opacity-80 text-[#5f5e5e] dark:text-stone-500 hover:text-[#2f3331]" href="#">Bespoke</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined text-[#5f5e5e]" data-icon="shopping_bag">shopping_bag</span>
+</div>
+</nav>
+<!-- Background Content (Blurred Collection View) -->
+<main class="min-h-screen pt-32 px-12 blur-md select-none pointer-events-none overflow-hidden">
+<header class="mb-20">
+<h1 class="text-6xl font-headline italic tracking-tight text-on-background mb-4">Personal Archive</h1>
+<p class="text-sm font-label uppercase tracking-widest text-primary">Volume IV: Olfactory Notes</p>
+</header>
+<!-- Mock Grid Layout (Visual Noise for Blur) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="space-y-6">
+<div class="aspect-[3/4] bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="minimalist clear perfume bottle on stone surface with dramatic soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvKAt-WuWn6iLLSnytDS8dB1PPuX2_kW4qhiZ98shwWqbyfs6n3Uz7_-3NTWK05ipmJM1O-pVLEkfoA3X2oiGHT8CktO0pzcDKRTxvBhzTMEONPVWGqFYszUl3r-0163Nh8XTYiMHnhOQB5gRvAXirKon46TIvjqK9tlInSe2h3iPEw0dss9CfsO9KvfpQT2FF98Ks4Q5urI63EEN_cqjQSji2t7HFKp1PiCA3Z-63WTEjRGfeZRlHillqOD7X1cxd16U6eI4Rv1w"/>
+</div>
+<div class="text-center">
+<h3 class="font-headline text-2xl italic">No. 07: Vetiver Rain</h3>
+<p class="text-xs font-label uppercase tracking-widest mt-2">Damp Earth &amp; Bergamot</p>
+</div>
+</div>
+<div class="space-y-6 mt-12">
+<div class="aspect-[3/4] bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="aesthetic display of amber glass fragrance bottles in a clean marble gallery setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGdzH4cIK9wi9ERo4b2SyoKmTDp_Gjp6IuoZXPRP9HRZMGWlupSXBxD6CdY-oeBehV1ukxtj2iDKGRB4STV6GC79rSbpkLUABdldiEh0e_U6DMelT9goK3o4cxgZrMJnd-6sWwLvF_FWnQ-JSl-NMBycbEGbN026xZcMjWI_ML5Vq4U0-zYRhZYm4xy3cwe3J5ShsJkTRN6sfrbEdS2p3fcBCGNwBJTxmb8krHWo2WE9NEGknAd6KFswETzqxpbjHTaw7ep6IOq7g"/>
+</div>
+<div class="text-center">
+<h3 class="font-headline text-2xl italic">No. 12: Copper Sun</h3>
+<p class="text-xs font-label uppercase tracking-widest mt-2">Metallic Heat &amp; Jasmine</p>
+</div>
+</div>
+<div class="space-y-6">
+<div class="aspect-[3/4] bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="artistic close up of perfume liquid ripples with soft neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwn9MqNmN4DlVtK9Mql_NhDdd0gwY2PMqPpimAzsae4Jc4RKFXOkTt36_fWBLEL4A8PDgFI7OslOkI9WAhArCVJN5IGuNsrLynNLBa5s_8BULvAYxDtMtMyQrG3hzNclzs_FaFXK9xRGPTJTOiRX28FvQF3xNO-bbkm9Zq45OT0frgrxg62-KenBnmyvmLq1zlAS5SHJWG-GRligQr0sxzgGtiXNcqnRH4wORoKch_Ia2fhZFxYYVH2MKGNg_eR8aTg3zlNyeWXuE"/>
+</div>
+<div class="text-center">
+<h3 class="font-headline text-2xl italic">No. 03: Lunar Ash</h3>
+<p class="text-xs font-label uppercase tracking-widest mt-2">Incense &amp; Dry Cedar</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Modal Overlay -->
+<div class="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-on-background/5 backdrop-blur-luxury">
+<div class="w-full max-w-xl bg-surface shadow-[0_24px_80px_rgba(47,51,49,0.05)] border-0">
+<!-- Modal Header / Close -->
+<div class="flex justify-end p-6 pb-0">
+<button class="material-symbols-outlined text-on-background/40 hover:text-on-background transition-colors" data-icon="close">close</button>
+</div>
+<!-- Modal Content -->
+<div class="px-12 pb-16 pt-4 text-center">
+<h2 class="text-4xl md:text-5xl font-headline italic tracking-tight text-on-background mb-4">
+                    Add Custom Tag
+                </h2>
+<p class="text-primary font-body text-sm mb-12 max-w-sm mx-auto leading-relaxed">
+                    Personalize your archive by creating unique olfactory markers.
+                </p>
+<!-- Input Section -->
+<div class="w-full text-left mb-12">
+<label class="block text-[10px] font-label uppercase tracking-[0.15em] text-on-surface-variant mb-4">
+                        Tag Descriptor
+                    </label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 px-0 focus:ring-0 focus:border-on-surface font-headline italic text-xl placeholder:text-outline-variant/50 placeholder:font-body placeholder:text-sm placeholder:not-italic transition-colors" placeholder="e.g., Solar, Metallic, Rainy" type="text"/>
+</div>
+<!-- Active Tags Preview (Contextual) -->
+<div class="mb-12">
+<p class="text-[10px] font-label uppercase tracking-[0.15em] text-on-surface-variant mb-4 text-left">Suggested Elements</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 bg-secondary-container text-on-secondary-container text-[10px] font-label uppercase tracking-wider">Mineral</span>
+<span class="px-3 py-1.5 bg-secondary-container text-on-secondary-container text-[10px] font-label uppercase tracking-wider">Ozone</span>
+<span class="px-3 py-1.5 bg-secondary-container text-on-secondary-container text-[10px] font-label uppercase tracking-wider">Static</span>
+</div>
+</div>
+<!-- Primary Action -->
+<button class="w-full bg-on-background text-surface py-5 font-label uppercase tracking-[0.2em] text-xs transition-transform active:scale-[0.98] hover:opacity-90">
+                    Add Tag
+                </button>
+<button class="mt-6 text-[10px] font-label uppercase tracking-widest text-on-surface-variant hover:text-on-background transition-colors">
+                    Discard Draft
+                </button>
+</div>
+</div>
+</div>
+<!-- Footer Anchor (Shared Component) -->
+<footer class="bg-[#faf9f7] dark:bg-stone-950 w-full py-20 px-12 tonal-shift bg-[#f3f4f1] dark:bg-stone-900 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 opacity-20 pointer-events-none">
+<div class="font-['Manrope'] text-[10px] uppercase tracking-[0.15em] text-[#5f5e5e] dark:text-stone-500">
+            © 2024 Atelier Sillage. All rights reserved.
+        </div>
+<div class="flex space-x-10">
+<a class="font-['Manrope'] text-[10px] uppercase tracking-[0.15em] text-[#5f5e5e] dark:text-stone-500 hover:text-[#2f3331] transition-colors" href="#">Privacy</a>
+<a class="font-['Manrope'] text-[10px] uppercase tracking-[0.15em] text-[#5f5e5e] dark:text-stone-500 hover:text-[#2f3331] transition-colors" href="#">Terms</a>
+<a class="font-['Manrope'] text-[10px] uppercase tracking-[0.15em] text-[#5f5e5e] dark:text-stone-500 hover:text-[#2f3331] transition-colors" href="#">Shipping</a>
+<a class="font-['Manrope'] text-[10px] uppercase tracking-[0.15em] text-[#5f5e5e] dark:text-stone-500 hover:text-[#2f3331] transition-colors" href="#">Contact</a>
+</div>
+</footer>
+</body></html>

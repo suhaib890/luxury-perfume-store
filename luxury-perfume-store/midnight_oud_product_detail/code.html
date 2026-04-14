@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Midnight Oud | Essence d'Art</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=Manrope:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#edeeeb",
+                    "tertiary": "#625f58",
+                    "inverse-primary": "#ffffff",
+                    "surface-container-highest": "#e0e3e0",
+                    "primary-fixed-dim": "#d6d4d3",
+                    "error-container": "#fe8983",
+                    "secondary-container": "#f4e0c3",
+                    "on-surface": "#2f3331",
+                    "tertiary-fixed": "#f9f3ea",
+                    "primary-dim": "#535252",
+                    "secondary": "#6b5d46",
+                    "on-secondary": "#fff8f1",
+                    "tertiary-fixed-dim": "#ebe4db",
+                    "surface-dim": "#d6dbd7",
+                    "on-surface-variant": "#5c605d",
+                    "surface-container-low": "#f3f4f1",
+                    "primary-container": "#e5e2e1",
+                    "outline": "#777c79",
+                    "on-primary-fixed": "#403f3f",
+                    "tertiary-container": "#f9f3ea",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#5c5b5b",
+                    "on-primary": "#faf7f6",
+                    "on-secondary-container": "#5d503a",
+                    "on-tertiary-fixed": "#4c4943",
+                    "primary-fixed": "#e5e2e1",
+                    "secondary-dim": "#5f513b",
+                    "error-dim": "#4e0309",
+                    "background": "#faf9f7",
+                    "primary": "#5f5e5e",
+                    "inverse-surface": "#0d0e0e",
+                    "on-secondary-fixed-variant": "#675a43",
+                    "secondary-fixed-dim": "#e5d2b6",
+                    "secondary-fixed": "#f4e0c3",
+                    "on-background": "#2f3331",
+                    "on-tertiary-container": "#5f5b54",
+                    "on-tertiary": "#fef8ef",
+                    "surface-bright": "#faf9f7",
+                    "outline-variant": "#afb3b0",
+                    "on-error-container": "#752121",
+                    "inverse-on-surface": "#9d9d9b",
+                    "tertiary-dim": "#56534c",
+                    "surface-tint": "#5f5e5e",
+                    "error": "#9f403d",
+                    "surface-container-high": "#e6e9e6",
+                    "surface-variant": "#e0e3e0",
+                    "on-error": "#fff7f6",
+                    "on-tertiary-fixed-variant": "#69665f",
+                    "on-secondary-fixed": "#4a3e29",
+                    "on-primary-container": "#525151",
+                    "surface": "#faf9f7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0rem",
+                    "lg": "0rem",
+                    "xl": "0rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #faf9f7;
+        color: #2f3331;
+      }
+      .serif-display {
+        font-family: 'Newsreader', serif;
+        letter-spacing: -0.02em;
+      }
+      .label-text {
+        font-family: 'Manrope', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-size: 0.65rem;
+      }
+      .custom-underline {
+        position: relative;
+      }
+      .custom-underline::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 0.5px;
+        background-color: currentColor;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f7]/80 backdrop-blur-xl flex justify-between items-center px-6 md:px-12 py-6 w-full">
+<div class="text-2xl font-medium tracking-widest uppercase font-['Manrope'] text-[#2f3331]">
+            Essence d'Art
+        </div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="text-[#2f3331]/60 font-['Newsreader'] tracking-tight hover:opacity-80 transition-opacity duration-500" href="#">Collections</a>
+<a class="text-[#2f3331]/60 font-['Newsreader'] tracking-tight hover:opacity-80 transition-opacity duration-500" href="#">The Gallery</a>
+<a class="text-[#2f3331]/60 font-['Newsreader'] tracking-tight hover:opacity-80 transition-opacity duration-500" href="#">About</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-[#2f3331] hover:opacity-80 transition-opacity">favorite</button>
+<button class="material-symbols-outlined text-[#2f3331] hover:opacity-80 transition-opacity">shopping_bag</button>
+</div>
+</nav>
+<main class="pt-24 md:pt-32">
+<!-- Hero Section: Product Detail -->
+<section class="max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-32">
+<!-- Left: Imagery -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover grayscale-[20%] hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.2,0,0,1)]" data-alt="luxury black matte perfume bottle with gold metallic accents sitting on a dark textured granite surface with dramatic low-key lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4tsBfxeHAwds1QG3OZgRDYW4t5etgC9mPKG5gLBzbutL8Z9AD88fSV4I-ydJ0iyW5iIf-2HOkn9vqezzRSQOs7I5387rM9WgBNe5ADKzuYMhDKhEmCu27jKcEHWRcrpI_phu0dD7xGLDe8wT2uaNOMyEZOi7DOWTLuwJB0AhCr3xdjl8YGBw1T-iLF7tDncNoBXDzlFBndD45AO6dokYIxFF3xxCHwkqTeOjdzTw31gm4_2NU7B_NxFMUEXQQRWxMVmOFTbSw70M"/>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close up of dark resinous wood and a crystal of amber reflecting soft warm highlights on a dark silk fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0pi4zHuFz2tVmcukuHofsfSdtQj-XGMcHiCQORxQQ43oRgWepbSuDEMC_L7ZBMhOW4HzEdopqJI0bivcXEzc0Om7lrDWHRxIwLisKv0yGA24seqYjMAqrVcVEujf3r4iWm3jdQh0gKj4Et9FqYSsr_Xuz9Csdg367Zb2Vq6m1dNuydFaMdrEFNrZD3UCjo1NdfMynRNBVqz632yYRIip-x-oQyAOfxB3HcjyFn_DJez7IIFfEJHPgwCIZpuztq67chEIhsNlwDyU"/>
+</div>
+<div class="aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="misty dark forest at twilight with deep blue and charcoal tones and silhouettes of pine trees in the fog" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD43QDNYgKhvQQe8j36TMqTgzVtRWftyFLGWkqSrE-YtRUQI0IkTbAnNfyOJLOxXmheRGTpRMrWQWgIuWdq2rToOEtketuSOSfuh7iSQ6Bbluqxp_GbiIO1hhX_NI0EMB4Q-OsGZzKUzW2HEwiqpKq2qxHA_sVLxRAuxq2QFYpzfMKlWsJUL5Rb9XG9iQuy9YkHlwof5-Gpga1PC2PBrCss1HVzAmwQiY6QBEDxs5pGeAlvGVaON0I6NuY3VZxA1kehwkJlLdwop9w"/>
+</div>
+</div>
+</div>
+<!-- Right: Content -->
+<div class="lg:col-span-5 flex flex-col justify-start pt-4 lg:pt-12">
+<nav class="label-text mb-8 text-on-surface-variant flex gap-2">
+<span>Fragrance</span>
+<span>/</span>
+<span>Nocturnal Series</span>
+</nav>
+<h1 class="serif-display text-5xl md:text-7xl font-light mb-4">Midnight Oud</h1>
+<p class="text-xl serif-display italic text-secondary mb-8">Eau de Parfum — 100ml</p>
+<p class="text-2xl font-light mb-10 text-on-surface">₹2499</p>
+<div class="mb-12">
+<p class="text-on-surface-variant leading-relaxed font-light mb-8 max-w-md">
+                        A dark, mysterious journey through smoky resins and deep woods. Designed for the quiet hours of the night, where the air grows cold and the spirit awakens.
+                    </p>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<button class="flex-1 bg-on-surface text-surface py-5 label-text text-sm hover:opacity-90 transition-all duration-500 ease-[cubic-bezier(0.2,0,0,1)]">
+                            Add to Cart
+                        </button>
+<button class="w-16 h-16 flex items-center justify-center border border-outline-variant/20 hover:bg-surface-container transition-colors duration-500">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="mt-4 flex items-center gap-2 text-on-surface-variant label-text text-[9px]">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+<span>Complimentary delivery on all orders over ₹5000</span>
+</div>
+</div>
+<!-- Notes Peek -->
+<div class="mt-20 border-t border-outline-variant/10 pt-12">
+<h3 class="label-text mb-6">Signature Accords</h3>
+<div class="flex flex-wrap gap-3">
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 text-[10px] uppercase tracking-widest">Smoky</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 text-[10px] uppercase tracking-widest">Woody</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 text-[10px] uppercase tracking-widest">Resinous</span>
+</div>
+</div>
+</div>
+</section>
+<!-- The Experience (Middle Section) -->
+<section class="bg-surface-container-low py-32 mb-32">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 items-center gap-24">
+<div class="relative">
+<div class="aspect-[3/4] max-w-md mx-auto overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="atmospheric photo of wisps of grey smoke curling against a pitch black background with soft rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGOGtc1IMqS7IKTJUttnbYd_yM423YDDOvZILyYboNbwPB27F8yje-OTwLlwiC4sb5zdUfHHmodjMgIFN3mNp4ptPUsc9nuIJjylzITpPJlSNzBonWyod0BGxxV6E5Q4rKK2dCRmLGoYwjgeKr2-3uuJAZPCH89xTpfmeV-MYz8k3s307eySrg2o87-pUbLrGFksJ0ULiSiMDI9Mq8Z_8bEmr6H6jFulsmYv3o3btdo2eN1rIqezfxy1O7q6l7xxcbm6tsdCihKYM"/>
+</div>
+<div class="absolute -bottom-12 -right-6 lg:-right-12 bg-surface p-10 max-w-xs hidden md:block">
+<p class="serif-display italic text-lg leading-relaxed">
+                            "The transition from saffron to oud is like watching a flame die down into glowing embers."
+                        </p>
+</div>
+</div>
+<div>
+<h2 class="serif-display text-4xl mb-8">The Experience</h2>
+<div class="space-y-6 text-on-surface-variant font-light leading-relaxed max-w-lg">
+<p>
+                            Midnight Oud is not merely a fragrance; it is a nocturnal ritual. It begins with the sharpness of Bergamot, quickly softened by the exotic warmth of Saffron—a brief flicker of light before the descent.
+                        </p>
+<p>
+                            As the heart reveals itself, the romanticism of Damask Rose intertwines with the primal depth of Agarwood (Oud). It is a complex, brooding dialogue that lingers on the skin, evolving as the hours pass.
+                        </p>
+<p>
+                            The dry-down is where the mystery solidifies. Sandalwood and Golden Amber create a creamy, balsamic finish that anchors the scent, leaving a trail that is both haunting and undeniably sophisticated.
+                        </p>
+</div>
+<div class="mt-12">
+<a class="serif-display italic custom-underline text-on-surface hover:text-secondary transition-colors" href="#">Discover the Craftsmanship</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Scent Notes (Grid) -->
+<section class="max-w-[1440px] mx-auto px-6 md:px-12 mb-48">
+<div class="text-center mb-24">
+<span class="label-text">The Olfactory Pyramid</span>
+<h2 class="serif-display text-5xl mt-4">Scent Composition</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-0">
+<!-- Top Notes -->
+<div class="flex flex-col items-center text-center px-12 md:border-r border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl mb-6 font-light">light_mode</span>
+<h4 class="label-text mb-4 text-secondary">Top Notes</h4>
+<p class="serif-display text-2xl mb-2">Bergamot</p>
+<p class="serif-display text-2xl">Saffron</p>
+<p class="text-[11px] uppercase tracking-widest text-on-surface-variant mt-6 max-w-[180px]">The initial impression, radiant and fleeting.</p>
+</div>
+<!-- Heart Notes -->
+<div class="flex flex-col items-center text-center px-12 md:border-r border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl mb-6 font-light">favorite</span>
+<h4 class="label-text mb-4 text-secondary">Heart Notes</h4>
+<p class="serif-display text-2xl mb-2">Damask Rose</p>
+<p class="serif-display text-2xl">Agarwood (Oud)</p>
+<p class="text-[11px] uppercase tracking-widest text-on-surface-variant mt-6 max-w-[180px]">The core identity, emotive and deep.</p>
+</div>
+<!-- Base Notes -->
+<div class="flex flex-col items-center text-center px-12">
+<span class="material-symbols-outlined text-4xl mb-6 font-light">nights_stay</span>
+<h4 class="label-text mb-4 text-secondary">Base Notes</h4>
+<p class="serif-display text-2xl mb-2">Sandalwood</p>
+<p class="serif-display text-2xl">Golden Amber</p>
+<p class="text-[11px] uppercase tracking-widest text-on-surface-variant mt-6 max-w-[180px]">The lasting memory, rich and grounded.</p>
+</div>
+</div>
+</section>
+<!-- Customer Reviews -->
+<section class="max-w-[1440px] mx-auto px-6 md:px-12 mb-32">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="serif-display text-4xl mb-2">Notes from the Gallery</h2>
+<p class="text-on-surface-variant label-text">4.9 / 5.0 based on 124 reviews</p>
+</div>
+<button class="label-text border-b border-on-surface pb-1 hover:text-secondary transition-colors">Read All</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-10 flex flex-col justify-between h-full hover:bg-surface-container-low transition-colors duration-500">
+<div>
+<div class="flex gap-1 mb-6">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="serif-display text-xl mb-12 leading-relaxed">
+                            "A masterpiece of restraint. It doesn't scream, it whispers with authority. The Oud is perfectly balanced with the saffron."
+                        </p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover grayscale" data-alt="minimalist studio portrait of a sophisticated man in his 40s" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHujJ6lP-AZEpR01SSFn0w5nSDeIx6DRiYjFi9aiPXGLitNrddM3og3t4vlJSUj-1oM1jCgnfJRdEMYaR88gncXlHKq94RsMsll0dJhFVmU8CHdqagGOLuSn2fThRcAiE1g_Lm-tRrOSJh0HS9eFDfCUnbRwNxnDhQZ_LvK3CSi7n1cM-IHHUniV3ForRdunnAyB5S7o87fLkXwcAyDVfzlKcaoLlPbmmVRXw0iNbmAfxf3NEsmFN_ks9PImmSLnBKm04mAaGYJ1o"/>
+</div>
+<div>
+<p class="label-text">Julian V.</p>
+<p class="text-[9px] uppercase tracking-widest text-on-surface-variant">Verified Collector</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-10 flex flex-col justify-between h-full hover:bg-surface-container-low transition-colors duration-500">
+<div>
+<div class="flex gap-1 mb-6">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="serif-display text-xl mb-12 leading-relaxed">
+                            "The longevity is incredible. I put it on in the evening and can still catch subtle hints of the sandalwood the next morning."
+                        </p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover grayscale" data-alt="minimalist studio portrait of an elegant woman with a neutral expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXhYnaV0SLDm9ZC_Ky-Y3hwFbOTOGKzRTyQsnghUPaT0m2uyyiA0PGgNXwLEdB2wBq3u8H89L5AdLehu9rCpjwXAIU_sobJxv-x2KgOf540-JJPREAgrW3l8A21RgF7qumbQrFVoyQiMOUoHw5fLBN0UApVb9jYHSlDy2RLxSU20o32lwJAjpMlidNcwj8a5PfgtE4nuGSZ38yDKYies9M-W7d54d6SwgmmOf-_Kooi2zYJm9eDNZ7zfPYrUbDL33pBMY6XKnfxAc"/>
+</div>
+<div>
+<p class="label-text">Elena R.</p>
+<p class="text-[9px] uppercase tracking-widest text-on-surface-variant">Verified Collector</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-10 flex flex-col justify-between h-full hover:bg-surface-container-low transition-colors duration-500">
+<div>
+<div class="flex gap-1 mb-6">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<p class="serif-display text-xl mb-12 leading-relaxed">
+                            "Truly artistic packaging. The heavy glass bottle feels expensive in hand. A dark, smoky rose that stays very sophisticated."
+                        </p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden">
+<div class="w-full h-full bg-surface-container-highest flex items-center justify-center label-text">MD</div>
+</div>
+<div>
+<p class="label-text">Marcus D.</p>
+<p class="text-[9px] uppercase tracking-widest text-on-surface-variant">Verified Collector</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-[#f3f4f1] text-[#5f5e5e] font-['Manrope'] text-[10px] uppercase tracking-[0.2em] flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full">
+<div class="mb-8 md:mb-0">
+            © 2024 The Olfactory Gallery. All rights reserved.
+        </div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="hover:text-[#2f3331] transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-[#2f3331] transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="hover:text-[#2f3331] transition-colors" href="#">Sustainability</a>
+</div>
+</footer>
+</body></html>

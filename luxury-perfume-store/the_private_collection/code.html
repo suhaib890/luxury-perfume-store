@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Private Collection | ATELIER SILLAGE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#fff8f1",
+                    "on-error": "#fff7f6",
+                    "primary-dim": "#535252",
+                    "on-tertiary-fixed-variant": "#69665f",
+                    "inverse-primary": "#ffffff",
+                    "on-surface": "#2f3331",
+                    "surface-variant": "#e0e3e0",
+                    "surface-tint": "#5f5e5e",
+                    "on-primary-container": "#525151",
+                    "surface-container-high": "#e6e9e6",
+                    "surface-container-low": "#f3f4f1",
+                    "on-tertiary": "#fef8ef",
+                    "primary-fixed": "#e5e2e1",
+                    "primary-fixed-dim": "#d6d4d3",
+                    "secondary-fixed": "#f4e0c3",
+                    "error": "#9f403d",
+                    "surface-dim": "#d6dbd7",
+                    "secondary-fixed-dim": "#e5d2b6",
+                    "surface-container-highest": "#e0e3e0",
+                    "inverse-surface": "#0d0e0e",
+                    "on-error-container": "#752121",
+                    "inverse-on-surface": "#9d9d9b",
+                    "surface-container-lowest": "#ffffff",
+                    "outline": "#777c79",
+                    "on-secondary-fixed-variant": "#675a43",
+                    "tertiary-dim": "#56534c",
+                    "surface-bright": "#faf9f7",
+                    "on-primary-fixed-variant": "#5c5b5b",
+                    "error-dim": "#4e0309",
+                    "on-tertiary-container": "#5f5b54",
+                    "on-primary-fixed": "#403f3f",
+                    "secondary": "#6b5d46",
+                    "outline-variant": "#afb3b0",
+                    "secondary-container": "#f4e0c3",
+                    "tertiary-container": "#f9f3ea",
+                    "secondary-dim": "#5f513b",
+                    "on-surface-variant": "#5c605d",
+                    "surface-container": "#edeeeb",
+                    "primary": "#5f5e5e",
+                    "on-primary": "#faf7f6",
+                    "surface": "#faf9f7",
+                    "on-tertiary-fixed": "#4c4943",
+                    "on-secondary-container": "#5d503a",
+                    "tertiary-fixed-dim": "#ebe4db",
+                    "tertiary": "#625f58",
+                    "on-background": "#2f3331",
+                    "background": "#faf9f7",
+                    "tertiary-fixed": "#f9f3ea",
+                    "primary-container": "#e5e2e1",
+                    "on-secondary-fixed": "#4a3e29",
+                    "error-container": "#fe8983"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .serif { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container">
+<!-- Shared TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f7]/80 dark:bg-[#1A1A1A]/80 backdrop-blur-xl flex justify-between items-center px-6 md:px-12 py-8 w-full">
+<div class="text-2xl font-light tracking-[0.2em] uppercase text-[#2f3331] dark:text-[#faf9f7] font-['Newsreader']">
+            ATELIER SILLAGE
+        </div>
+<div class="hidden md:flex items-center space-x-12 font-['Newsreader'] tracking-tight">
+<a class="text-[#2f3331]/60 dark:text-[#faf9f7]/60 hover:opacity-80 transition-opacity duration-500" href="#">Collections</a>
+<a class="text-[#2f3331]/60 dark:text-[#faf9f7]/60 hover:opacity-80 transition-opacity duration-500" href="#">Scent Profiles</a>
+<a class="text-[#2f3331]/60 dark:text-[#faf9f7]/60 hover:opacity-80 transition-opacity duration-500" href="#">The Journal</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-[#2f3331] dark:text-[#faf9f7] hover:opacity-80 transition-opacity duration-500" data-icon="shopping_bag">shopping_bag</button>
+<button class="material-symbols-outlined text-[#2f3331] dark:text-[#faf9f7] hover:opacity-80 transition-opacity duration-500" data-icon="person">person</button>
+</div>
+</nav>
+<main class="pt-32 pb-40 px-6 md:px-12 max-w-[1600px] mx-auto">
+<!-- Header Section -->
+<header class="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<h1 class="serif text-5xl md:text-7xl font-light tracking-tight text-on-surface mb-6">The Private Collection</h1>
+<p class="text-on-surface-variant font-light tracking-wide max-w-md uppercase text-[10px]">A curated anthology of olfactory experiences and personal memories.</p>
+</div>
+<div class="flex flex-col md:items-end gap-6">
+<button class="bg-on-surface text-surface px-8 py-4 uppercase tracking-[0.2em] text-xs transition-all duration-500 hover:opacity-80 flex items-center gap-3">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                    Add New Fragrance
+                </button>
+</div>
+</header>
+<!-- Search and Filter (Integrated) -->
+<section class="mb-16">
+<div class="relative group">
+<span class="absolute left-0 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline-variant" data-icon="search">search</span>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/20 py-4 pl-10 focus:ring-0 focus:border-on-surface transition-colors placeholder:text-outline-variant/50 placeholder:tracking-[0.2em] placeholder:text-[10px] uppercase text-xs tracking-widest" placeholder="SEARCH YOUR ARCHIVE..." type="text"/>
+</div>
+<div class="flex flex-wrap gap-8 mt-8">
+<button class="text-[10px] uppercase tracking-widest border-b border-on-surface pb-1">All Fragrances</button>
+<button class="text-[10px] uppercase tracking-widest text-outline-variant hover:text-on-surface transition-colors pb-1">Favorites</button>
+<button class="text-[10px] uppercase tracking-widest text-outline-variant hover:text-on-surface transition-colors pb-1">Wishlist</button>
+<button class="text-[10px] uppercase tracking-widest text-outline-variant hover:text-on-surface transition-colors pb-1">Archive</button>
+</div>
+</section>
+<!-- Fragrance Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-20">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative transition-transform duration-700 ease-[cubic-bezier(0.2,0,0,1)] group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover grayscale-[0.2] transition-transform duration-1000 group-hover:scale-110" data-alt="minimalist perfume bottle with amber liquid on a clean stone surface with soft architectural shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxYf9zMXB03SKNuTZwfDZqfBKEk10RXd-3LZ00ZOJADvtOZN0Z7o0sa2pFJEwYcd3nnPQ7P3TL2unuznuHPj4Yq2svHVpbuYdqk9qyn-ph93ANh6mnRrfYoaXbpG509O25nuBlPFbpSLSbhYt4_p1rdsoh9aFUgElVlakXm_gVXv0iO_Jzk1fpWWPcfxL1CDvcJH00lAkNArmET06l9OC9RpR7ZWZNwW_aooH0UcW1CHwRE_omjm5bPMrmC2I1-63DZ0sgL36qCCY"/>
+<div class="absolute top-4 right-4">
+<span class="material-symbols-outlined text-on-surface/40 hover:text-secondary transition-colors" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<h3 class="serif text-2xl mb-2 font-light">Midnight Oud</h3>
+<div class="flex gap-2 mb-4">
+<span class="bg-on-surface text-[9px] text-surface px-2 py-0.5 uppercase tracking-tighter">Evening</span>
+<span class="bg-secondary-container text-on-secondary-container text-[9px] px-2 py-0.5 uppercase tracking-tighter">Woody</span>
+</div>
+<p class="text-[9px] uppercase tracking-widest text-outline-variant">Last worn • 2 days ago</p>
+<div class="mt-4 flex gap-0.5">
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative transition-transform duration-700 ease-[cubic-bezier(0.2,0,0,1)] group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover grayscale-[0.2] transition-transform duration-1000 group-hover:scale-110" data-alt="clear glass perfume bottle with minimalist label against a light beige textured background with hard sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrEhH3_DGlcCxl24qxVGxPzYPXhMz55YJqsBibVJyRMGDc5BOvYNhqgxu6Hwd4qoAstknyKMCKdxjqeGqi-a4PCSqQtOjdAuYFgwDUfdO0MiX1NtA7OfiHhLaU31Wayyg_04otDrwqUUQGVPBLns8I3kfBNZB2KgGYgITEdUCmtBArPUFwYsUWHlDl1ACEPZDgz2K0OSr6K2EjFQKF5aPmjR4MF7kVTCZdyLm-rmmtoapv5q8tBKJOj8-60AC5229jmJ6s1AM053I"/>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<h3 class="serif text-2xl mb-2 font-light">Royal Amber</h3>
+<div class="flex gap-2 mb-4">
+<span class="bg-on-surface text-[9px] text-surface px-2 py-0.5 uppercase tracking-tighter">Formal</span>
+<span class="bg-secondary-container text-on-secondary-container text-[9px] px-2 py-0.5 uppercase tracking-tighter">Warm</span>
+</div>
+<p class="text-[9px] uppercase tracking-widest text-outline-variant">Last worn • 1 week ago</p>
+<div class="mt-4 flex gap-0.5">
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative transition-transform duration-700 ease-[cubic-bezier(0.2,0,0,1)] group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover grayscale-[0.2] transition-transform duration-1000 group-hover:scale-110" data-alt="heavy glass perfume bottle with dark liquid sitting on a marble plinth in a dramatic museum-like setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUW0-C-jhTLSF2UuHIrMDpcBIeOe1tFA3fKPkAiv__8lsoJpC-EdRemUxGZX00oFP_DqB9mIVpNFoDFgYhqo9BBSdZQWOgfYeaJANe9YgHi-q9A8P3miMvRdIL7wi8Z8zHF8nEOYhrz5FM1nXe_WNrNLjiHT5uXZSSI9BIXoQd2VK5N_TM03-oqpSqQFWIfHl0Azz-nQTb6gzOrmaiwpLX-Es2Y9dPHUmIQ_l6O3c1qZYKYNPCmuXBHM6T1Vc7MMbOiofK3wjzYnM"/>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<h3 class="serif text-2xl mb-2 font-light">Santal Noir</h3>
+<div class="flex gap-2 mb-4">
+<span class="bg-surface-container-high text-on-surface text-[9px] px-2 py-0.5 uppercase tracking-tighter">Daily</span>
+<span class="bg-secondary-container text-on-secondary-container text-[9px] px-2 py-0.5 uppercase tracking-tighter">Spicy</span>
+</div>
+<p class="text-[9px] uppercase tracking-widest text-outline-variant">Last worn • Yesterday</p>
+<div class="mt-4 flex gap-0.5">
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative transition-transform duration-700 ease-[cubic-bezier(0.2,0,0,1)] group-hover:scale-[1.02]">
+<img class="w-full h-full object-cover grayscale-[0.2] transition-transform duration-1000 group-hover:scale-110" data-alt="frosted glass perfume bottle on a bed of fresh white linens in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLfcoQFxHvlZVW3x1_roYktrqAuWgvieBgQv00iRzokB_I7-lB3XGjnrZxJ_XhUrkI-uMCt_V8Du1o584Ac6qT-oSHlsrCLbJQCRgv7_MJ4lBGUt7AvVrgdm-M4XH9bsBELh3UYMx2mKSr5qJL_lfWEKKVV4BK3SL9za401CU6HVfwaSf4ZjB84RntC7QgKgIgQNditJpOE2YJ25Cr-sXv5Vq4Y0NNhfh8BZWqfTwSiufq57Nb4PNag8DwFOp_WUBxVzKSb8l8pGg"/>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<h3 class="serif text-2xl mb-2 font-light">Morning Silk</h3>
+<div class="flex gap-2 mb-4">
+<span class="bg-surface-container-high text-on-surface text-[9px] px-2 py-0.5 uppercase tracking-tighter">Signature</span>
+<span class="bg-secondary-container text-on-secondary-container text-[9px] px-2 py-0.5 uppercase tracking-tighter">Floral</span>
+</div>
+<p class="text-[9px] uppercase tracking-widest text-outline-variant">Last worn • 3 days ago</p>
+<div class="mt-4 flex gap-0.5">
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[10px]" data-icon="star" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+</div>
+</div>
+<!-- Empty State / Add Placeholder -->
+<div class="group cursor-pointer border border-dashed border-outline-variant/30 flex flex-col items-center justify-center aspect-[3/4] p-12 transition-colors hover:border-on-surface/40">
+<span class="material-symbols-outlined text-4xl text-outline-variant mb-4 font-extralight" data-icon="add_circle">add_circle</span>
+<p class="serif text-xl font-light">Add to Archive</p>
+<p class="text-[10px] uppercase tracking-widest text-outline-variant mt-2">Grow your collection</p>
+</div>
+</div>
+</main>
+<!-- Shared Footer -->
+<footer class="bg-[#faf9f7] dark:bg-[#1A1A1A] w-full py-20 mt-40 border-t border-outline-variant/10">
+<div class="max-w-7xl mx-auto flex flex-col items-center space-y-8">
+<div class="flex flex-wrap justify-center gap-12">
+<a class="font-['Manrope'] text-[9px] uppercase tracking-widest text-[#2f3331] dark:text-[#faf9f7] opacity-50 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-[9px] uppercase tracking-widest text-[#2f3331] dark:text-[#faf9f7] opacity-50 hover:opacity-100 transition-opacity" href="#">Terms of Service</a>
+<a class="font-['Manrope'] text-[9px] uppercase tracking-widest text-[#2f3331] dark:text-[#faf9f7] opacity-50 hover:opacity-100 transition-opacity" href="#">Shipping &amp; Returns</a>
+</div>
+<p class="font-['Manrope'] text-[9px] uppercase tracking-widest text-[#2f3331] dark:text-[#faf9f7]">© 2024 ATELIER SILLAGE. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<!-- Side Nav Suppression Check: This is a top-level gallery view, we use TopNavBar as per instructions. SideNav omitted as TopNavBar handles primary navigation link clusters -->
+</body></html>
